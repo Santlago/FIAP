@@ -1,0 +1,7 @@
+// printar uma mensagem
+main(){ //responsavel por executar o programa
+	System.out.print("Digite o seu nome: ") //printa a mensagem
+}
+
+.nextLine(); //recebe alguma string
+.nextInt(); //recebe algum inteiro
