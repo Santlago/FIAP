@@ -4,6 +4,8 @@ n3 = int(input("Número 3...: "))
 
 #FORMA 1
 
+'''
+
 if n1 > n2 and n1 > n3:
     nmax = n1
 elif n2 > n1 and n2 > n3:
@@ -14,3 +16,20 @@ else:
     nmax = "um ou mais números são iguais"
 
 print(nmax)
+
+'''
+
+#FORMA 2
+
+'''
+maior = n1
+
+if n2 > maior:
+    maior = n2
+
+if n3 > maior:
+    maior = n3
+
+print(maior)
+
+'''
