@@ -1,0 +1,18 @@
+Atributo simples(atômico): guardam um conteudo indivisivel representa o dado. que e a menor unidade de armazenamento
+exemplos:
+  - RM (98451)
+  - Nome completo de um aluno (Rita de Cassia Rodrigues)
+  - Quantidade vendida (15)
+  - Salario Mensal (R$3580,00)
+
+Atributo composto: e formado por um conjunto d dados (atributos)
+exemplos:
+  - Endereco (Avenida Paulista, 1100 5o. andar - Sl 508 CEP 01310000 Bela Vista - São Paulo - SP)
+  - Tipo logradouro
+  - Nome logradouro
+  - Numero logradouro
+  - Complemento
+  - Numero CEP
+  - Bairro
+  - Cidade
+  - Estado
