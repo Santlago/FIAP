@@ -21,12 +21,26 @@ exemplos:
     - DDD
     - Numero telefone
     - Ramal
-    
 Justificativa: Todo atributo composto precisa ser normalizado transformar o atributo composto em atributos simples
 
-Atributo determinante: caracteristia de identigicar elementos (pessoa, lugar, objeto, produto, cliente...) de forma unica.
+Atributo determinante: caracteristica de identificar elementos (pessoa, lugar, objeto, produto, cliente...) de forma unica.
 Exemplos:
   - RM
   - Placa veiculo
   - Numero CPF
   - Numero RG
+
+Multivalorado: e um atributo que possui varios valores/ocorrencias (2 ou mais)
+Exemplos:
+  - Endereco (endereco comercial, residencial, de entrega, etc)
+  - Telefone (numero comercial, residencial, celular, etc)
+Justificativa: todo atributo multivalorado deve ser normalizado.
+A normalização de um atributo multivalorado irá gerar 2 ou mais entidades novas.
+
+Cardinalidade:
+  Minima:
+    0: opcional
+    1: mandatório(obrigatório)
+  Máxima:
+    1: monovalorado
+    n: multivalorado
