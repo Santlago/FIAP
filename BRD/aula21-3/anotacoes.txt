@@ -8,11 +8,25 @@ exemplos:
 Atributo composto: e formado por um conjunto d dados (atributos)
 exemplos:
   - Endereco (Avenida Paulista, 1100 5o. andar - Sl 508 CEP 01310000 Bela Vista - São Paulo - SP)
-  - Tipo logradouro
-  - Nome logradouro
-  - Numero logradouro
-  - Complemento
-  - Numero CEP
-  - Bairro
-  - Cidade
-  - Estado
+    - Tipo logradouro
+    - Nome logradouro
+    - Numero logradouro
+    - Complemento
+    - Numero CEP
+    - Bairro
+    - Cidade
+    - Estado
+  - Telefone: +55 11 4545-2525 Ramal: 451
+    - DDI
+    - DDD
+    - Numero telefone
+    - Ramal
+    
+Justificativa: Todo atributo composto precisa ser normalizado transformar o atributo composto em atributos simples
+
+Atributo determinante: caracteristia de identigicar elementos (pessoa, lugar, objeto, produto, cliente...) de forma unica.
+Exemplos:
+  - RM
+  - Placa veiculo
+  - Numero CPF
+  - Numero RG
