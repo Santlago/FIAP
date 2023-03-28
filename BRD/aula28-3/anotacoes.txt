@@ -1,0 +1,12 @@
+Entidade = tabela
+Atributo = campo ou coluna
+
+Regras de nomenclatura:
+  T_SIP_"nome entidade" (tabela_nomeProjeto_nomeEntidade)
+  nome de entidade: maiúsculo
+  nome de atributo: minúsculo
+  Ex:
+    T_SIP_DEPARTAMENTO
+    
+
+    
