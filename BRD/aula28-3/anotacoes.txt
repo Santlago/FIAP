@@ -7,6 +7,15 @@ Regras de nomenclatura:
   nome de atributo: minúsculo
   Ex:
     T_SIP_DEPARTAMENTO
-    
+   
+ocorrência = conjunto de valores (dados) que forma ua linha lógica (negócio)
+Ocorrência = Instância = Tupla
 
-    
+Física (Oracle)
+Linha = Registro
+
+chave primaria = identificador unico
+é um atributo que identifica de forma unica dcada linha/ocorrencia da entidade
+sua função é recuperar de orma eficiente um conjunto de dados
+a chave primari tem um conteudo unico
+toda entidade deve ter um atributo chave primaria
