@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+body {
+    background-image: url(../img/bg.png);
+}
+
+.texto{
+    font-family: 'Josefin Sans', sans-serif;
+    color: lightgray;
+}
+
+a{
+    text-decoration: none;
+    color: lightgray;
+}
