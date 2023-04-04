@@ -21,3 +21,7 @@ Mandatório/obrigatório:
   cardinalidade minima = 1
 Opcional:
   cardinalidade minima = 0
+
+Chave estrangeira e o atributo que estabelece a relacao entre duas entidades
+e deve ser sempre um atributo monovalorado (cardinalidade maxima = 1)
+chave estrangeira aponta (referencia) para uma chave primaria
