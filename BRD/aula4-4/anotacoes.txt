@@ -34,3 +34,10 @@ Todo relacionamento possui:
   nome = verbo / contexto negocio
   cardinalidade do relacionamento => quantidade de linhas que se associam entre as entidades analisadas
   analise da cardinalidade e feita no minimo e no maximo
+
+Cardinalidade minima:
+  0 = pode = nao se a ssocia com nenhuma linha
+  1 = se associa com pelo menos uma linha
+Cardinalidade maxima:
+  1 = se associa no maximo com 1 linha
+  n = muitos/varios = se associa no maximo com muitas linhas
