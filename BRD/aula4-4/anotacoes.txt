@@ -25,3 +25,12 @@ Opcional:
 Chave estrangeira e o atributo que estabelece a relacao entre duas entidades
 e deve ser sempre um atributo monovalorado (cardinalidade maxima = 1)
 chave estrangeira aponta (referencia) para uma chave primaria
+
+Relacionamento: acao (associacao) entre duas entidades
+Analise sempre feita aos pares e entidades
+acao (verbo) => ajuda no entendimento do relacionamento
+
+Todo relacionamento possui:
+  nome = verbo / contexto negocio
+  cardinalidade do relacionamento => quantidade de linhas que se associam entre as entidades analisadas
+  analise da cardinalidade e feita no minimo e no maximo
