@@ -1,1 +1,23 @@
+Ferramenta utilizada: Oracle SQL Developer Data Modeler
 
+logico: negocio
+relacional: oracle
+
+sempre inicia a modelagem pelo logico
+
+caso a guia nao apareca va em modelo logico -> botao direito -> show
+
+barra de ferramenteas: 
+  icone de selecao: sempre voltamos pra ele para selecionar
+  new entity: nova entidade
+  zoom+
+  zoom-
+
+quando vc cria uma entidade aparece as propriedades dela
+
+para configurar a entidade usaremos a planilha
+
+Mandatório/obrigatório:
+  cardinalidade minima = 1
+Opcional:
+  cardinalidade minima = 0
