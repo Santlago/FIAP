@@ -39,7 +39,17 @@ a{
     color: white;
 }
 
+li:hover {
+    color: rgb(255, 0, 64);
+    transition: 0.1s;
+}
+
 footer{
     margin-top: 100px;
     text-align: center;
+}
+
+a:hover {
+    color: rgb(255, 0, 64);
+    transition: 0.1s;
 }
