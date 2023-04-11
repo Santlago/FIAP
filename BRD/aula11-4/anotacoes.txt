@@ -67,5 +67,3 @@ outros exemplos de entidades fracas:
   fraca (exame medico) - forte (paciente) -> um exame medico pertence a quem? paciente
   fraca (notas de avaliações) - forte (aluno) -> a nota pertence a quem? aluno
   fraca (historico de precos - forte (produto/servico) -> o historico de precos pertence a quem? produto/servico
-
-
