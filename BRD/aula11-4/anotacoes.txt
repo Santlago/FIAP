@@ -1,1 +1,32 @@
+exemplo de relacionamentos
+regras de negócio:
+  RN04 - Um departamento pode locar vários funcionários.
+  RN05 - Um funcionário deve pertencer a um único departamento.
+análise de relacionoamento
+aome: locar (trabalhar)
+cardinalidade do relacionalmento
+entidade: departamento (origem)
+  cardinalidade minima: 0 (pode)
+  cardinalidade maxima: n (varios)
+entidade: funcionario (destino)
+  cardinalidade minima: 1 (deve)
+  cardinalidade maxima: 1 (unico)
+tipo relacionamento 1:n (um para muitos)
 
+quem recebe a chave estrangeira: quem tem a cardinalidade maxima = 1 pois deve ser monovalorado
+
+Data Modeler
+  Cardinalidade minima
+    Source ou target opconal (sim ou não)
+  Cardinalidade maxima
+    origem p/ destino
+    destino p/ origem
+  Notação (desenho) = Representação gráfica de Barker
+    # Chave primaria
+    * atributo obrigatorio
+    o atributo opicional
+    --------- pode (minimo)
+    _________ deve (minimo)
+    (pé de galinha) máxima = n(varios)
+    nenhum desenho na extremidade = 1(unico)
+  
