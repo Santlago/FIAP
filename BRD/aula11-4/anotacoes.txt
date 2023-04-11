@@ -29,4 +29,43 @@ Data Modeler
     _________ deve (minimo)
     (pé de galinha) máxima = n(varios)
     nenhum desenho na extremidade = 1(unico)
+  Eng Informação
+    P = primary key
+    F = foreign key
+    * = atributo obrigatorio
+    sem simbolo = opcional
+    ----------- relacionamento normal
+    ___________ relacionamento identificado ou identificador
   
+Exemplo de relaiconamento 1:n - identificado ou identificador
+regras de negocio:
+    RN06 - um funcionario pode ter um ou mais dependentes (filhos, esposa ou marido).
+    RN07 - cada dependente pertence a um unico funcionario.
+    RN09 - não será considerada a hipotese de termos um casal trabalhando na mesma empresa (teriam dependentes comuns)
+analise do relacionamento
+nome: tem
+cardinalidade do relacionamento
+entidade: funcionario (origem)
+    mardinalidade minima: 0(pode=nenhum)
+    cardinalidade maxima: N(um ou mais=varios)
+entidade: dependente (destino)
+    mardinalidade minima: 1(deve=um)
+    cardinalidade maxima: 1(um unico)
+
+entidade fraca é uma entidade que depende de outra entidade para existir
+entidade dependente é uma entidade fraca (pois depende da entidade funcionario para existir)
+portanto funciona como um prolongameno das informações do funcioário
+dica: a entidade dependente pertence a quem: resposta: funcionario
+
+regra para cha primaria da entidade fraca:
+toda entidade fraca tera uma chave primaria composta por:
+  chave estrangeira
+  atributo da propria entidade fraca
+o temro relacionametno identificado ou identificador vem do relacionamento que leva a chave estrangeira como chave primaria da entidade fraca
+
+outros exemplos de entidades fracas:
+  fraca (exame medico) - forte (paciente) -> um exame medico pertence a quem? paciente
+  fraca (notas de avaliações) - forte (aluno) -> a nota pertence a quem? aluno
+  fraca (historico de precos - forte (produto/servico) -> o historico de precos pertence a quem? produto/servico
+
+
