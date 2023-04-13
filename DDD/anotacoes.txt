@@ -1,1 +1,1 @@
-aa
+subclasses: classes que herdam atributos da superclasse
