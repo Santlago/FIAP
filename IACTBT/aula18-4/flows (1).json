@@ -1,0 +1,44 @@
+[
+    {
+        "id": "10dcfd5c00dcfa57",
+        "type": "telegram receiver",
+        "z": "547796728e46d95d",
+        "name": "",
+        "bot": "63bf74b5ecf424a3",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "x": 370,
+        "y": 320,
+        "wires": [
+            [
+                "55b49342d8bc7d46"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "63bf74b5ecf424a3",
+        "type": "telegram bot",
+        "botname": "vendas_watson_rednode10bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    }
+]
