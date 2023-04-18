@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1AB178F8-C42C-DAC7-DEB9-63C4418F4E27" name="T_SPV_NOTA_FISCAL">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:13:17 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_nota_fiscal" id="26664F27-9E68-1240-84F0-844E280AE9C5">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:13:36 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_cliente" id="9C71A895-8407-1A92-E5E0-4794BB3205D1">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-18 13:48:27 UTC</createdTime>
+<generatorID>25A6507D-EBE6-EE3D-718E-140AE10D483E</generatorID>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<referedAttribute>51FBE571-8DDD-7178-8DC0-3D86B4E6735A</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cdnr_cfop" id="0FE31629-9F24-5FAD-DE3C-37D3C6BC9A6E">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-18 13:55:57 UTC</createdTime>
+<generatorID>FDC1ACC6-7971-336A-7C47-1C59396E0B52</generatorID>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<referedAttribute>5FB503AD-EC93-534D-15E4-C7438FE553F5</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_emissao" id="CCE5E3A2-05DD-7040-47F3-02E765D6558D">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:13:49 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_saida" id="83E02A73-7B51-A43C-29D1-595EDA8917A2">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:14:11 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vc_total_nf" id="CF4D3F07-C446-79AE-388E-E195CB876711">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:14:21 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_desconto" id="47E00125-0ACD-AA5D-AE7D-7314237F15C9">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:14:27 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8132D177-8832-9E76-0343-2A8401CEBA50" name="T_SPV_NOTA PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:13:48 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>26664F27-9E68-1240-84F0-844E280AE9C5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
