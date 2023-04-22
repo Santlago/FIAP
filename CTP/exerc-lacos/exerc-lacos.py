@@ -91,6 +91,7 @@ print(f"""
 """)
 '''
 
+'''
 #-----------------------Exercício 3 V3-------------------------------
 print("""
     1 - HUGUINHO
@@ -132,3 +133,4 @@ print(f"""
     2 - ZEZINHO:     {vz} VOTOS
     3 - LUIZINHO:    {vl} VOTOS
 """)
+'''
