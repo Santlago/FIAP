@@ -9,5 +9,6 @@ public class Testa {
 		paulo.setSalario(1000);
 		System.out.println(paulo.getSalario());
 		System.out.println(paulo.calculaBonificação());
+		System.out.println("teste");
 	}
 }
