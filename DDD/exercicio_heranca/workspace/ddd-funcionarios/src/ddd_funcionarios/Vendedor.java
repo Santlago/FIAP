@@ -6,8 +6,8 @@ public class Vendedor extends Funcionario {
 	private double comissao;
 	
 	//metodos
-	public double calculoComissao(double valorVendido ) {
-		return 0;
+	public double calculaComissao(double valorVendido) {
+		return getSalario() + valorVendido;
 	}
 	
 	//getters e setters

@@ -7,8 +7,8 @@ public class Funcionario {
 	protected double salario;
 	
 	//metodos
-	public double calculaBonificação() {
-		return this.salario + 1000;
+	public double calculaBonificação(double valor) {
+		return this.salario + valor;
 	}
 
 	//getters e setters

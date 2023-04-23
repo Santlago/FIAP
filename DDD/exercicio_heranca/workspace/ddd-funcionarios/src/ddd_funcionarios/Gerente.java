@@ -7,7 +7,7 @@ public class Gerente extends Funcionario {
 	
 	//getters e setters
 	public double getGratificacao() {
-		return gratificacao;
+		return calculaBonificação(1000);
 	}
 	
 	public void setGratificacao(double gratificacao) {
