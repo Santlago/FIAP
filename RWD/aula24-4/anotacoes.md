@@ -1,6 +1,6 @@
 <h1>Tags</h1>
 
-Serve para indocar onde ficarao os navegadores do site, tem efeito semântico
+Serve para indicar onde ficarao os navegadores do site, tem efeito semântico
 ```
 <nav>
 ```
