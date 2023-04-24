@@ -1,4 +1,4 @@
-#Tags
+<h1>Tags</h1>
 
 Serve para indocar onde ficarao os navegadores do site, tem efeito semântico
 ```
@@ -24,7 +24,7 @@ Colocar informações sonre o conteúdo, rodapé
 ```
 <br>
 
-##Design Responsivo
+<h1>Design Responsivo</h1>
 
 Pilares do Design Responsivo:
 <ul>
