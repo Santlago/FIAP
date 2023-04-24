@@ -1,4 +1,4 @@
-##Tags
+#Tags
 
 Serve para indocar onde ficarao os navegadores do site, tem efeito semântico
 ```
