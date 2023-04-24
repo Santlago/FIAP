@@ -56,3 +56,20 @@ p{
     font-size: 1.5em; <!-- 1.5 vezes o tamanho do pai -->
 }
 ```
+<br>
+
+Tamanho em relação ao elemento pai
+```
+div{
+    width: 100%;
+}
+```
+<br>
+
+Tamanho em relação a tela que será mostrada ao usuário
+```
+div{
+    width: 100vh;
+}
+```
+<br>
