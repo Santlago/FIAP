@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: blue;
+    width: 100%;
+    min-height: 100px;
+}
+
+nav{
+    background-color: rgb(0, 0, 150);
+    width: 100%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    text-align: center;
+}
+
+nav ul li a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+main{
+    width: 100%;
+    min-height: 400px;
+    background-color: #ccc;
+    display: flex;
+}
+
+.moda-masc{
+    width: 40%;
+    background-color: #ccf;
+    border: 2px solid #55a;
+}
+
+
+.moda-fem{
+    width: 30%;
+    background-color: #fcc;
+    border: 2px solid #a55;
+}
+
+.moda-fem div{
+    font-size: 20px;
+}
+
+p{
+    font-size: 1.5em;
+}
+
+.moda-inf{
+    width: 30%;
+    background-color: #cfc;
+    border: 2px solid #5a5;
+}
+
+footer{
+    width: 100%;
+    height: 80px;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
