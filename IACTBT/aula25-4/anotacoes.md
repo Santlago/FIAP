@@ -9,12 +9,10 @@ npm install -g --unsafe-perm node-red
 ```
 </p>
 
-<p>
 Para abrir o node-RED basta digitar o comando no cmd:
 ```
 node-red
 ```
-</p>
 
 <p>
 Usando o navegador, digite o IP local e a porta onde está rodando o Node-RED
