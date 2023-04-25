@@ -7,3 +7,10 @@ Passos para aplicar o conceito de entidade associativa:
     A entidade associativa passa a se relacionar com cada entidade que anteriormente se associava de M:Não
     O tipo de relacionamento entre a entidade associativa e as outras entidades que se associavam será de 1:N
     
+Qual nome dar a entidade associativa?
+    Nome utilizado no contexto negócio
+    Verbo que ajuda entender o significado da entidade associativa
+    Quando nao encontramos um nome significativo, podemos unir os nomes das entidades que se associavam de M:N, exemplo: A_B (nome da entidade A e nome da entidade B)
+
+A entidade Associativa possui atributos?
+Pode nao ter atributos: quando nao encontramos atributos que descrevem a entidade associativa, ela possuira apenas as chaves estrangeiras, sendo tambem de entidade de ligacao
