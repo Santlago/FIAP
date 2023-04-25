@@ -26,3 +26,47 @@ Atributos da entidade associativa: implantacao
 Periodo de tempo em que um funcionario trabalhaa em um projeto
 Data entrada (quando o funcionario entrou ou iniciou a implantacao de um projeto)
 Data saida (quando um funcionario sai ou termina a implantacao de um projeto)
+
+Relacionamento entre projeto e implantacao (entidade associativa)
+Interpretacao das regras de negocio:
+    Cada projeto pode ter uma ou mais implantacoes
+    Cada implantacao se refere a um unico projeto
+
+Analise do relacionamento
+    Nome: implantar
+    Cardinalidade do Relacionamento
+        Entidade: projeto (origem)
+            Cardinalidade minima: 0
+            Cardinalidade máxima: N
+        Entidade: implantacao (destino pois card max = 1)
+            Cardinalidade minima: 1
+            Cardinalidade maxima: 1
+        Tipo de relacionamento: 1:Nome
+
+Relacionamento entre funcionario e implantacao (entidade associativa)
+
+Interpretacao das regras de negocio
+    Cada funcionario pode realizar varias implantacoes
+    Cada implantacao e realizada por um unico funcionario
+
+Analise do relacionamento
+    Nome: Trabalhar/realizar
+    Cardinalidade do relacionamento
+    Entidade: funcionario (origem)
+        Cardinalidade minima: 0
+        Cardinalidade maxima: N
+    Entidade: implantacao (destino)
+        Cardinalidade minima: 1
+        Cardinalidade maxima: 1
+    Tipo de relacionamento: 1:N
+
+Regras para chave primaria da entidade associativa:
+    Chave oriamria composta pelas duas chaves estrangeiras )se garantir unicidade = valores unicos)
+    Chave primaria composta por uma das chaves estrangeiras mais um atributo da propria entidade associativa (se garantir unicidade = valores unicos)
+    Criar um atributo novo como chave primaria
+
+Regra par aa entidade associativa implantacao (chave primaria)
+
+RN20 - Uma implantacao e identificada )chave primaria) pelo codigo da implantacao, numerico ocm ate tres digitos e pelo codigo do projeto que esta implantacao pertence
+Codigo projeto => chave estrangeira
+Codigo implantacao => atributo da propria entidade associativa
