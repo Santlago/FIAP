@@ -3,7 +3,7 @@
 Primeiro precisamos de ter o node.js instalado
 <br>
 
-Após isso devemos instalar o node red pelo seguinte comando no cmd:
+Após isso devemos instalar o node red pelo seguinte comando no cmd
 ```
 npm install -g --unsafe-perm node-red
 ```
