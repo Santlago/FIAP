@@ -1,0 +1,8 @@
+Não podemos ter relação muitos para muitos, quando temos esse problema devemos fazer o seguinte:
+
+quanto temos o relacionamento M:N, devemos aplicar o conceito de entidade associativa (agregacao em vanco de dados), para resolver o problema da chave estrangeira multivalorada (varios valores)
+
+Passos para aplicar o conceito de entidade associativa:
+    Substituir o relacionamento M:N, por uma nova entidade, chamada entidade associativa
+    A entidade associativa passa a se relacionar com cada entidade que anteriormente se associava de M:Não
+    O tipo de relacionamento entre a entidade associativa e as outras entidades que se associavam será de 1:N
