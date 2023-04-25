@@ -70,3 +70,12 @@ Regra par aa entidade associativa implantacao (chave primaria)
 RN20 - Uma implantacao e identificada )chave primaria) pelo codigo da implantacao, numerico ocm ate tres digitos e pelo codigo do projeto que esta implantacao pertence
 Codigo projeto => chave estrangeira
 Codigo implantacao => atributo da propria entidade associativa
+
+Cardinalidade do relacionamento
+    Entidade: projeto (origem)
+        Cardinalidade minima: 0 (pode)
+        Cardinalidade maxima: N (uma ou mais)
+    Entidade: implantacao (destino)
+        Cardinalidade minima: 1 (deve)
+        Cardinalidade maxima: 1 (um unico)
+    Tipo de relacionamento: 1:N
