@@ -6,7 +6,7 @@
 #     print(i)
 
 
-#-----------------------Exercício 1-V2-------------------
+# -----------------------Exercício 1-V2-------------------
 # n = int(input("Digite um número: "))
 
 # i = 0
@@ -40,6 +40,16 @@
 # print(soma)
 
 #-----------------------Exercício 2-V2-------------------
+# n = 1
+# soma = 0
+
+# while n > 0:
+#     n = int(input("Digite um número: "))
+#     soma += n
+    
+# print(soma)
+
+#-----------------------Exercício 2-V3-------------------
 # n = 1
 # soma = 0
 
