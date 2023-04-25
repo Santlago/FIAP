@@ -14,3 +14,15 @@ Qual nome dar a entidade associativa?
 
 A entidade Associativa possui atributos?
 Pode nao ter atributos: quando nao encontramos atributos que descrevem a entidade associativa, ela possuira apenas as chaves estrangeiras, sendo tambem de entidade de ligacao
+
+Possui atributos: em varias sitacoes encontramos atributos que descrevem a relacao existente entre as entidades. sao atributos que descrevem o relacionamento M:N
+
+Exemplificando atraves do relacionametno M:N entre projeto e funcionario:
+Entidade associativa: implantacao (contexto de negocio/verbo)
+
+Implantacao: é o trabalho desenvolvido por um funcionario e um projeto, durante um periodo de tempo 
+
+Atributos da entidade associativa: implantacao
+Periodo de tempo em que um funcionario trabalhaa em um projeto
+Data entrada (quando o funcionario entrou ou iniciou a implantacao de um projeto)
+Data saida (quando um funcionario sai ou termina a implantacao de um projeto)
