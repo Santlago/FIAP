@@ -69,7 +69,7 @@ PROCEDIMENTO
     prox_num(6)
     >>> 7
 
-2. Dadp um numero por parâmetro, exibir o próximo múltipo de 5.
+2. Dado um numero por parâmetro, exibir o próximo múltipo de 5.
     prox_mult_5(12)
     >>> 15
 
