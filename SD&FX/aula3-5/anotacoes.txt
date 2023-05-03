@@ -1,0 +1,11 @@
+Duplo diamante: Usando pensamento divergendte e convergente para conehcer e compreender os problemas e para criar soluções
+Scrum (metodologia ágil): começa o desenvolvimento do software antes do planejamento e depois vai adaptando conforme orientações do cliente
+
+Backlog do produto: lista de histórias do usuário + diagrama de casos de uso
+
+Épicos (contagem de história) -> histórias -> tarefas
+
+Product owner: representante do cliente que trabalha junto ao grupo
+eke é responsável pelo backlog do produto
+
+kanban: é um método voltado a melhorar a execução dos serviços, entregar valor de maneira contínua e evoluir continuamente o sistema de produção, através da resolução sistemática de problemas.
