@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A5D9C596-AC35-16E8-C911-0187801E602A" name="T_SIP_FUNCIONARIOv1">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-18 14:50:40 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SIP</ownerDesignName>
+<engineerTo>
+<item key="EDBB5FD6-66EE-A794-B8A8-9BF68F03AFBD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nr_matricula" id="B70C9062-EA45-3B82-4CE9-7DCB2397FF0C">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-18 14:50:40 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SIP</ownerDesignName>
+<engineerTo>
+<item key="EDBB5FD6-66EE-A794-B8A8-9BF68F03AFBD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_departamento" id="1306E243-ABC9-808F-53C8-92070A65E5F9">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-18 14:50:40 UTC</createdTime>
+<generatorID>F4BA985B-E323-3001-64D5-E97BE51C623F</generatorID>
+<ownerDesignName>MODELAGEM PROJETO SIP</ownerDesignName>
+<engineerTo>
+<item key="EDBB5FD6-66EE-A794-B8A8-9BF68F03AFBD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_funcionario" id="5B6DD51C-0DF5-DA38-8474-F1677335733E">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-18 14:50:40 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SIP</ownerDesignName>
+<engineerTo>
+<item key="EDBB5FD6-66EE-A794-B8A8-9BF68F03AFBD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_nascimento" id="68136100-398F-0C43-004B-8D4ABA8D6AC6">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-18 14:50:40 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SIP</ownerDesignName>
+<engineerTo>
+<item key="EDBB5FD6-66EE-A794-B8A8-9BF68F03AFBD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_admissao" id="0AF78D2A-0D00-8392-257F-A890A81F9FFD">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-18 14:50:40 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SIP</ownerDesignName>
+<engineerTo>
+<item key="EDBB5FD6-66EE-A794-B8A8-9BF68F03AFBD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_endereco" id="763CE42A-7B6F-CB76-3C27-43A2A3B88F89">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-18 14:50:40 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SIP</ownerDesignName>
+<engineerTo>
+<item key="EDBB5FD6-66EE-A794-B8A8-9BF68F03AFBD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_salario_mensal" id="B8CFE6B1-3F69-CCC0-D3E6-530DC72A9288">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-18 14:50:40 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SIP</ownerDesignName>
+<engineerTo>
+<item key="EDBB5FD6-66EE-A794-B8A8-9BF68F03AFBD" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F92837D6-CC66-E2EE-3B66-909707EDE907" name="T_SIP_FUNCIONARIO PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-18 14:50:40 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SIP</ownerDesignName>
+<engineerTo>
+<item key="EDBB5FD6-66EE-A794-B8A8-9BF68F03AFBD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B70C9062-EA45-3B82-4CE9-7DCB2397FF0C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F67E001E-B764-FA89-15E9-4E23996977E2" name="T_SPV_CLIENTE">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:07:43 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cliente" id="51FBE571-8DDD-7178-8DC0-3D86B4E6735A">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:07:58 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_cliente" id="8B42708D-FC4E-3A46-9130-BC2BD960EB80">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:08:13 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_nsacimento" id="6566B811-076E-7DF8-09E5-B5028CA76BC6">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:08:20 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_genero" id="D6A5222F-B0C2-33E1-C66C-B5DEA8C919D8">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:08:27 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_endereco" id="777B5D4B-7FB7-ECBE-E05A-29E107497F06">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:08:39 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_telefone" id="CF5B12C9-2015-7F74-611A-2B4C68BEFBCA">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:08:46 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_email" id="1B0553E7-DEED-5905-07A6-24FF667C5E65">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:08:53 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_cpf" id="193D19C8-0AAC-7BB9-106C-7752F0F31FDD">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:09:20 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_cpf_digito" id="61CB987B-CEB1-0603-D4A5-DC85CEFFB3F9">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:09:31 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_rg" id="8B770D62-135A-54AE-6C05-E6B43A3CE454">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:09:38 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_rg_digito" id="6DB41CF6-9088-4D1A-C8EA-4C7C7C920104">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:09:45 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BE0C137B-48CB-414E-9AA8-5A4E45138DF9" name="T_SPV_CLIENTE PK">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-04 14:08:12 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>51FBE571-8DDD-7178-8DC0-3D86B4E6735A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

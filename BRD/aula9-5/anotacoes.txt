@@ -1,51 +1,81 @@
-TIPO DE DADOS
+Não podemos ter relação muitos para muitos, quando temos esse problema devemos fazer o seguinte:
 
+quanto temos o relacionamento M:N, devemos aplicar o conceito de entidade associativa (agregacao em vanco de dados), para resolver o problema da chave estrangeira multivalorada (varios valores)
 
-TIPO DE DADO NUMERICO: ARMAZENAR NUMEROS INTEIROS OU DECIMAIS, POSITIVOS, NEGATIVOS OU ZERO.
-PADRAO (LING. SQL) -> NUMERICO (P, S)
-P = PRECISAO = QUANTIDADE TOTAL DE DIGITOS DE UM NUMERO INCLUINDO A PARTE DECIMAL;
-S = ESCALA = QUANTIDADE DE DIGITOS DECIMAIS DO NUMERO.
-
-ORACLE -> NUMBER(P, S)
-PRECISAO = QUANTIDADE TOTAL SEM FORMATACAO
-ESCALA = DECIMAL DO NUMERO
-
-EXEMPLO: NUMERO INTEIRO -> QT_VENDIDA = 1250 (4 DIGITOS DE PRECISAO E ESCALA = 0)
-QT_VENDIDA -> NUMERIC(4,0) OU NUMERIC(4) SQL
-              NUMBER(4,0) OU NUMBER(4) ORACLE
-
-EXEMPLO NUMERO DECIMAL -> SALARIO MENSAL = R$3457,94 (6 DIGITOS DE PRECISAO E ESCALA = 2)
-VL_SALARIO_MENSAL -> NUMERIC(6,2) SQL
-                     NUMBER(6,2) ORACLE
-
-
-TIPO DE DADO PARA ARMAZENAR DATE E HORA
-PADRAO (LING. SQL)
-    DATE -> ARMAZENAR DATA (DD/MM/YYYY)
-    TIME -> ARMAZENAR HORA (HH:MI:SS)
-
-ORACLE -> DATE -> ARMAZENA DATA E HORA (DD/MM/YYYY HH:MI:SS)
-OCUPA 7 BYTES
-
-OUTRO TIPO DE DADO QUE TAMBEM ARMAZENA DATA E HORA, COM UMA PRECISAO MAIOR NA PARTE NA PARTE FRACIONARIA DOS MILESIMOS DE SEGUNDO
-TIMESTAMP -> DATA E HORA (DD/MM/YYYY HH:MI.SS.sssssssss)
-OCUPA 11 BYTES
-
-
-TIPO DE DADOS TEXTO (STRING/ALFANUMERICO): ARMAZENA CADEIA DE CARACTERES (LETRAS, NUMEROS E CARACTERES ESPECIAIS)
-
-PADRAO (LING. SQL)
-    CHAR() -> CADEIA DE CARACTERES DE TAMANHO FIXO
-    VARCHAR() -> CADEIA DE CARACTERES DE TAMANHO VARIAVEL
-ORACLE  
-    CHAR() -> CADEIA DE CARACTERES DE TAMANHO FIXO
-        CAPACIDADE: 2000 BYTES
-    SUGESTAO DE USO: PARA TUDO ONDE O TAMANHO E O CONTEUDO FOR CONHECIDO
-        SIGLA DOS ESTADOS (SP, MG, RJ...) -> CHAR(2)
-        GENERO (H, M, NB) -> CHAR(2)
-        SEXO (M,F) CHAR(1)
-        PLACA VEICULO (FJI9H34) -> CHAR(7)
-    VARCHAR2() -> CADEIA DE CARACTERES DE TAMANHO VARIAVEL
-        CAPACIDADE: 4000 BYTES, PODENDO ESTENDER ATE 32767 BYTES (v12c)
-    SUGESTAO DE USO: TUDO 
+Passos para aplicar o conceito de entidade associativa:
+    Substituir o relacionamento M:N, por uma nova entidade, chamada entidade associativa
+    A entidade associativa passa a se relacionar com cada entidade que anteriormente se associava de M:Não
+    O tipo de relacionamento entre a entidade associativa e as outras entidades que se associavam será de 1:N
     
+Qual nome dar a entidade associativa?
+    Nome utilizado no contexto negócio
+    Verbo que ajuda entender o significado da entidade associativa
+    Quando nao encontramos um nome significativo, podemos unir os nomes das entidades que se associavam de M:N, exemplo: A_B (nome da entidade A e nome da entidade B)
+
+A entidade Associativa possui atributos?
+Pode nao ter atributos: quando nao encontramos atributos que descrevem a entidade associativa, ela possuira apenas as chaves estrangeiras, sendo tambem de entidade de ligacao
+
+Possui atributos: em varias sitacoes encontramos atributos que descrevem a relacao existente entre as entidades. sao atributos que descrevem o relacionamento M:N
+
+Exemplificando atraves do relacionametno M:N entre projeto e funcionario:
+Entidade associativa: implantacao (contexto de negocio/verbo)
+
+Implantacao: é o trabalho desenvolvido por um funcionario e um projeto, durante um periodo de tempo 
+
+Atributos da entidade associativa: implantacao
+Periodo de tempo em que um funcionario trabalhaa em um projeto
+Data entrada (quando o funcionario entrou ou iniciou a implantacao de um projeto)
+Data saida (quando um funcionario sai ou termina a implantacao de um projeto)
+
+Relacionamento entre projeto e implantacao (entidade associativa)
+Interpretacao das regras de negocio:
+    Cada projeto pode ter uma ou mais implantacoes
+    Cada implantacao se refere a um unico projeto
+
+Analise do relacionamento
+    Nome: implantar
+    Cardinalidade do Relacionamento
+        Entidade: projeto (origem)
+            Cardinalidade minima: 0
+            Cardinalidade máxima: N
+        Entidade: implantacao (destino pois card max = 1)
+            Cardinalidade minima: 1
+            Cardinalidade maxima: 1
+        Tipo de relacionamento: 1:Nome
+
+Relacionamento entre funcionario e implantacao (entidade associativa)
+
+Interpretacao das regras de negocio
+    Cada funcionario pode realizar varias implantacoes
+    Cada implantacao e realizada por um unico funcionario
+
+Analise do relacionamento
+    Nome: Trabalhar/realizar
+    Cardinalidade do relacionamento
+    Entidade: funcionario (origem)
+        Cardinalidade minima: 0
+        Cardinalidade maxima: N
+    Entidade: implantacao (destino)
+        Cardinalidade minima: 1
+        Cardinalidade maxima: 1
+    Tipo de relacionamento: 1:N
+
+Regras para chave primaria da entidade associativa:
+    Chave oriamria composta pelas duas chaves estrangeiras )se garantir unicidade = valores unicos)
+    Chave primaria composta por uma das chaves estrangeiras mais um atributo da propria entidade associativa (se garantir unicidade = valores unicos)
+    Criar um atributo novo como chave primaria
+
+Regra par aa entidade associativa implantacao (chave primaria)
+
+RN20 - Uma implantacao e identificada )chave primaria) pelo codigo da implantacao, numerico ocm ate tres digitos e pelo codigo do projeto que esta implantacao pertence
+Codigo projeto => chave estrangeira
+Codigo implantacao => atributo da propria entidade associativa
+
+Cardinalidade do relacionamento
+    Entidade: projeto (origem)
+        Cardinalidade minima: 0 (pode)
+        Cardinalidade maxima: N (uma ou mais)
+    Entidade: implantacao (destino)
+        Cardinalidade minima: 1 (deve)
+        Cardinalidade maxima: 1 (um unico)
+    Tipo de relacionamento: 1:N

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Classificar" directorySegmentName="seg_0" id="A5A70B12-CCD7-3479-4E8E-3F8F37664CC7">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-18 14:09:44 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SVP</ownerDesignName>
+<engineerTo>
+<item key="8B464C20-5F45-C871-75CE-920D200EB9B8" value="true"/>
+</engineerTo>
+<sourcePk>98333BAF-BD14-73FE-2FE5-7C340BDE34E3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>17BD727F-CF93-54CB-6C8E-E32EAEF421B1</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>99BE5B94-0F4A-C3AF-C39C-F44DA06EFB2E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

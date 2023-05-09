@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="LOCAR" directorySegmentName="seg_0" id="F4BA985B-E323-3001-64D5-E97BE51C623F">
+<createdBy>logonrmlocal</createdBy>
+<createdTime>2023-04-11 14:56:53 UTC</createdTime>
+<ownerDesignName>MODELAGEM PROJETO SIP</ownerDesignName>
+<engineerTo>
+<item key="EDBB5FD6-66EE-A794-B8A8-9BF68F03AFBD" value="true"/>
+</engineerTo>
+<sourcePk>832E4FF0-9D29-EF52-DA8D-B3DDE6BF07EF</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>F9AB68EF-663C-A198-B074-85100E6A770F</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C3A9BD1F-71B6-BD97-0E4F-17C6AFEA0B35</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
