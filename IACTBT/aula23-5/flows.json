@@ -1,0 +1,219 @@
+[
+    {
+        "id": "5af4cf14d103d3e6",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0403571c0c946f1e",
+        "type": "telegram receiver",
+        "z": "5af4cf14d103d3e6",
+        "name": "",
+        "bot": "c19441b850be231c",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "x": 90,
+        "y": 120,
+        "wires": [
+            [
+                "4f2a95775e03344f",
+                "6bceabed9170cc0e"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "378c4e6cf76d60ed",
+        "type": "watson-speech-to-text",
+        "z": "5af4cf14d103d3e6",
+        "name": "",
+        "alternatives": 1,
+        "speakerlabels": true,
+        "smartformatting": false,
+        "lang": "pt-BR",
+        "langhidden": "pt-BR",
+        "langcustom": "NoCustomisationSetting",
+        "langcustomhidden": "",
+        "custom-weight": "0.5",
+        "band": "Telephony",
+        "bandhidden": "Telephony",
+        "keywords": "",
+        "keywords-threshold": "0.5",
+        "word-confidence": false,
+        "password": "",
+        "apikey": "YDiiV5vkQ5hLiy4SP_Cicurd3zrwtVvWhGNXGjYDNjID",
+        "payload-response": true,
+        "streaming-mode": false,
+        "streaming-mute": true,
+        "auto-connect": false,
+        "discard-listening": false,
+        "disable-precheck": false,
+        "service-endpoint": "https://api.au-syd.speech-to-text.watson.cloud.ibm.com/instances/27edb77a-0af4-43f9-a352-ef3b1684fedb",
+        "x": 360,
+        "y": 120,
+        "wires": [
+            [
+                "b06bb86f97113335"
+            ]
+        ]
+    },
+    {
+        "id": "ec1b1aff570c6d3f",
+        "type": "telegram sender",
+        "z": "5af4cf14d103d3e6",
+        "name": "",
+        "bot": "c19441b850be231c",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 870,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6bceabed9170cc0e",
+        "type": "function",
+        "z": "5af4cf14d103d3e6",
+        "name": "",
+        "func": "msg.params = {};\n\nmsg.params.session_id = '2115409007'\nmsg.payload = msg.payload.weblink\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 220,
+        "y": 220,
+        "wires": [
+            [
+                "378c4e6cf76d60ed",
+                "6f2316c4b1988281"
+            ]
+        ]
+    },
+    {
+        "id": "7ef9877f61fbc66e",
+        "type": "function",
+        "z": "5af4cf14d103d3e6",
+        "name": "",
+        "func": "msg.payload = {\n    chatId: msg.params.session_id,\n    content: msg.payload,\n    type: 'message'\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 220,
+        "wires": [
+            [
+                "ec1b1aff570c6d3f",
+                "56bbe4555acc1732"
+            ]
+        ]
+    },
+    {
+        "id": "b06bb86f97113335",
+        "type": "watson-translator",
+        "z": "5af4cf14d103d3e6",
+        "name": "",
+        "action": "translate",
+        "basemodel": "ar-en",
+        "domain": "general",
+        "srclang": "pt",
+        "destlang": "en",
+        "apikey": "dnusER2-6s8txQWbCHPiQsicLYfAzt0EyaFqoMjqHWse",
+        "custom": "",
+        "domainhidden": "general",
+        "srclanghidden": "pt",
+        "destlanghidden": "en",
+        "basemodelhidden": "ar-en",
+        "customhidden": "",
+        "filetype": "forcedglossary",
+        "trainid": "",
+        "lgparams2": true,
+        "service-endpoint": "https://api.us-south.language-translator.watson.cloud.ibm.com/instances/fce48d24-8d80-488e-9b9f-485161a27ce4",
+        "x": 590,
+        "y": 120,
+        "wires": [
+            [
+                "7ef9877f61fbc66e"
+            ]
+        ]
+    },
+    {
+        "id": "4f2a95775e03344f",
+        "type": "debug",
+        "z": "5af4cf14d103d3e6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 190,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "6f2316c4b1988281",
+        "type": "debug",
+        "z": "5af4cf14d103d3e6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "56bbe4555acc1732",
+        "type": "debug",
+        "z": "5af4cf14d103d3e6",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 910,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "c19441b850be231c",
+        "type": "telegram bot",
+        "botname": "ckpt2_repeat_bot",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    }
+]
