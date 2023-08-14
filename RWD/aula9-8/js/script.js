@@ -47,8 +47,22 @@ let filaBrinquedo = [
     {nome: 'Ronqui', altura: 1.70},
 ]
 
-let liberado = filaBrinquedo.every(cliente => cliente >= 1.60);
+let liberado = filaBrinquedo.every(cliente => cliente.altura >= 1.60);
 
 console.log(liberado ? "Podem começar" : "Monte outro grupo");
 
-let apto = filaBrinquedo.some(cliente = cliente >= 1.60);
+let apto = filaBrinquedo.some(cliente = cliente.altura >= 1.60);
+
+console.log(apto ? "Quem for maior volte para fila" : "Vocês não pode brincar");
+
+let repres = filaBrinquedo.find(cliente => cliente.altura >= 1.60)
+
+console.log(repres.nome);
+
+let convidados = ['prof Luis', 'Douglas', 'prof Rafael', 'Breno', 'prof Cordeiro']
+
+let prof = convidados.filter(conv => conv.includes('prof'))
+console.log(prof);
+
+sal = [1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000]
+let ajuste = sal.map(sal >= 2000 ? sal*1.15)
