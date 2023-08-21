@@ -1,6 +1,6 @@
-package br.com.fiap.bancoDados.dao;
+package dao;
 
-import br.com.fiap.bancoDados.entity.Endereco;
+import entity.Endereco;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -12,27 +12,103 @@
     background-color: black;
 }
 
-#main > div {
+#divHead {
+    width: 20%;
+}
+
+#divTable {
+    width: 70%;
     display: flex;
-    flex: 1;
+    margin: 3% auto;
+}
+
+#divTable > div > h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px 0;
+    background-color: white;
+}
+
+#divTable > div > ul > li {
+    list-style-type: none;
+    margin: 10px auto;
+    padding: 10px;
+    height: 50px;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
 }
 
 #divHead {
     background-color: rgb(163, 163, 163);
+    margin: auto;
 }
 
-#div1 {
+#idDiv1 {
     background-color: green;
+    width: calc(95% / 4);
 }
-#div2 {
+#idDiv2 {
     background-color: pink;
+    width: calc(95% / 4);
 }
-#div3 {
+#idDiv3 {
     background-color: yellow;
+    width: calc(95% / 4);
 }
-#div4 {
+#idDiv4 {
     background-color: rgb(156, 0, 196);
+    width: calc(95% / 4);
 }
-#div5 {
+#idDiv5 {
     background-color: rgb(79, 239, 250);
+    width: 5%;
+}
+
+/* -----------------------Forms------------------------ */
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }

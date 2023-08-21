@@ -1,4 +1,4 @@
-package br.com.fiap.bancoDados.entity;
+package entity;
 
 public class Endereco {
     private String cep;

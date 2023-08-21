@@ -1,6 +1,6 @@
-package br.com.fiap.bancoDados.tests;
+package tests;
 
-import br.com.fiap.bancoDados.dao.GerenciadorBD;
+import dao.GerenciadorBD;
 
 public class TesteConexao {
     public static void main(String[] args) {

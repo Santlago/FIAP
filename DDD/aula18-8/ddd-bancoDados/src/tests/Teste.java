@@ -1,7 +1,7 @@
-package br.com.fiap.bancoDados.tests;
+package tests;
 
-import br.com.fiap.bancoDados.dao.EnderecoDao;
-import br.com.fiap.bancoDados.entity.Endereco;
+import dao.EnderecoDao;
+import entity.Endereco;
 
 import java.sql.SQLException;
 import java.util.Scanner;

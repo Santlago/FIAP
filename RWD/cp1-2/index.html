@@ -10,7 +10,7 @@
     <div id="main">
         <div id="divHead">
             <h1>Tarefas</h1>
-            <form>
+            <form action="#" onsubmit="return false;">
                 <label for="idDesc">Descrição</label>
                 <input type="text" name="nmDesc" id="idDesc">
                 <label for="idAutor">Autor</label>
@@ -18,16 +18,26 @@
                 <label for="idDep">Departamento</label>
                 <input type="text" name="nmDep" id="idDep">
                 <label for="idImp">Importância</label>
-                <input type="text" name="nmImpa" id="idImp>
+                <input type="text" name="nmImpa" id="idImp">
                 <button id="idBtnAdd">Adicionar</button>
             </form>
         </div>
-        <div id="table">
-            <div id="div1">Descrição</div>
-            <div id="div2">Autor</div>
-            <div id="div3">Departamento</div>
-            <div id="div4">Importância</div>
-            <div id="div5">Box</div>
+        <div id="divTable">
+            <div id="idDiv1"><h3>Descrição</h3>
+                <ul id="ulDiv1"></ul>
+            </div>
+            <div id="idDiv2"><h3>Autor</h3>
+                <ul id="ulDiv2"></ul>
+            </div>
+            <div id="idDiv3"><h3>Departamento</h3>
+                <ul id="ulDiv3"></ul>
+            </div>
+            <div id="idDiv4"><h3>Importância</h3>
+                <ul id="ulDiv4"></ul>
+            </div>
+            <div id="idDiv5"><h3>Apagar</h3>
+                <ul id="ulDiv5"></ul>
+            </div>
         </div>
     </div>
     
