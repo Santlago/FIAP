@@ -56,3 +56,7 @@ function apagar(i) {
         listaOut5.innerHTML += `<li><button onclick="apagar(${i})">X</button></li>`
     });
 }
+
+function adicionarValor() {
+    
+}
