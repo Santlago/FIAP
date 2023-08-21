@@ -19,9 +19,20 @@
                 <input type="text" name="nmDep" id="idDep">
                 <label for="idImp">Importância</label>
                 <input type="text" name="nmImpa" id="idImp">
+                <label>
+                    <input type="checkbox" id="idHabOpcional"> Habilitar campos opcionais
+                </label>
+                <div id="optionalFields" style="display: none;">
+                    <label for="idValor">Valor (opcional)</label>
+                    <input type="text" name="nmValor" id="idValor">
+                    <label for="idDuracao">Duração (opcional)</label>
+                    <input type="text" name="nmDuracao" id="idDuracao">
+                </div>
                 <button id="idBtnAdd">Adicionar</button>
+                <button id="idTeste">Teste</button>
             </form>
         </div>
+        <div id="tabelaOrdenada"></div>
         <div id="divTable">
             <div id="idDiv1"><h3>Descrição</h3>
                 <ul id="ulDiv1"></ul>
@@ -35,13 +46,19 @@
             <div id="idDiv4"><h3>Importância</h3>
                 <ul id="ulDiv4"></ul>
             </div>
-            <div id="idDiv5"><h3>Apagar</h3>
+            <div id="idDiv5"><h3>Valor</h3>
                 <ul id="ulDiv5"></ul>
+            </div>
+            <div id="idDiv6"><h3>Duração</h3>
+                <ul id="ulDiv6"></ul>
+            </div>
+            <div id="idDiv7" calss="classApagar" style="width: auto"><h3>Apagar</h3>
+                <ul id="ulDiv7"></ul>
             </div>
         </div>
     </div>
     
-    <ul id="idLista"></ul>
     <script src="js/script.js"></script>
 </body>
 </html>
+

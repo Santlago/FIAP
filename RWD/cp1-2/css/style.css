@@ -23,6 +23,14 @@
     margin: 3% auto;
 }
 
+#divTable > div {
+    width: 20%;
+}
+
+#divTable > .classApagar {
+    width: 5%;
+}
+
 #divTable > div > h3 {
     display: flex;
     justify-content: center;
@@ -48,27 +56,6 @@
 #divHead {
     background-color: rgb(163, 163, 163);
     margin: auto;
-}
-
-#idDiv1 {
-    /* background-color: green; */
-    width: calc(95% / 4);
-}
-#idDiv2 {
-    /* background-color: pink; */
-    width: calc(95% / 4);
-}
-#idDiv3 {
-    /* background-color: yellow; */
-    width: calc(95% / 4);
-}
-#idDiv4 {
-    /* background-color: rgb(156, 0, 196); */
-    width: calc(95% / 4);
-}
-#idDiv5 {
-    /* background-color: rgb(79, 239, 250); */
-    width: 5%;
 }
 
 /* -----------------------Forms------------------------ */
@@ -116,4 +103,16 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+/* -------------------------Tabela Ordenada------------------------ */
+
+#divTableOrdenada {
+    background-color: white;
+    width: 100%;
+    display: flex;
+}
+
+#teste > h1 {
+    color: red;
 }
