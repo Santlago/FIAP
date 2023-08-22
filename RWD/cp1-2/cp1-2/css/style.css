@@ -107,6 +107,7 @@ button {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    margin: 10px auto
 }
 
 button:hover {
@@ -115,7 +116,6 @@ button:hover {
 
 /* -------------------------Tabela Ordenada------------------------ */
 #tabelaOrdenada {
-    background-color: rgb(163, 163, 163);
     width: 40%;
     display: flex;
     margin: 3% 15%;
@@ -132,7 +132,6 @@ button:hover {
 #divTableOrdenada > div {
     flex: 1;
     margin: 0 auto;
-    background-color: red;
     text-align: center;
 }
 
