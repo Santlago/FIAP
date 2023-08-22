@@ -42,7 +42,6 @@ function inserir() {
     }
 
     lista.push({ desc: descValue, autor: autorValue, dep: depValue, imp: impValue, val: valValue, dur: durValue});
-    // lista.sort((a, b) => b.imp - a.imp)
     listaOut1.innerHTML = ''
     listaOut2.innerHTML = ''
     listaOut3.innerHTML = ''
@@ -105,26 +104,41 @@ function camposOpcionais() {
     valorOptional.style.display = enableOptional ? 'block' : 'none';
 }
 
-
 // --------------------------Ordenar por importância-----------------------------------
 
 btnTeste = document.getElementById('idTeste')
 btnTeste.addEventListener('click', ordena)
+
 function ordena() {
-    const divTable = document.getElementById('divTable')
-    divTable.innerHTML = ''
-    let tabela = getElementById('tabelaOrdenada')
-    tabela.innerHTML = `teste`
-    document.getElementById('teste').innerHTML = `<h1>Teste2</h1>`
+
+    document.getElementById('divTable').innerHTML = ''
+    document.getElementById('divTable').style.width = '0';
+    document.getElementById('divTable').style.height = '0';
+    document.getElementById('divTable').style.display = 'none';
+    document.getElementById('divTable').style.display = 'none';
+
+    main = document.getElementById('main')
+    main.innerHTML += `<div id="tabelaOrdenada"></div>`
+    tabela = document.getElementById('tabelaOrdenada')
+    tabela.innerHTML = tabelaOrdenada
+
+    listaOutOrd1 = document.getElementById('ulOrdDiv1')
+    listaOutOrd2 = document.getElementById('ulOrdDiv2')
+
+    lista.sort((a, b) => b.imp - a.imp)
+
+    lista.forEach((elem, i) => {
+        listaOutOrd1.innerHTML += `<li>${elem.desc}</li>`
+        listaOutOrd2.innerHTML += `<li>${elem.imp}</li>`
+    });
 }
 
-let tabelaOrdenada = 
+let tabelaOrdenada =
     `<div id="divTableOrdenada">
         <div id="idDiv1"><h3>Descrição</h3>
-            <ul id="ulDiv1"></ul>
+            <ul id="ulOrdDiv1"></ul>
         </div>
-        <div id="teste"></div>
         <div id="idDiv4"><h3>Importância</h3>
-            <ul id="ulDiv4"></ul>
+            <ul id="ulOrdDiv2"></ul>
         </div>
     </div>`
