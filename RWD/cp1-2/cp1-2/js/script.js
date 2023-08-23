@@ -105,40 +105,34 @@ function camposOpcionais() {
 }
 
 // --------------------------Ordenar por importância-----------------------------------
-
-btnTeste = document.getElementById('idTeste')
-btnTeste.addEventListener('click', ordena)
+btnOrdena = document.getElementById('idOrdena')
+btnOrdena.addEventListener('click', ordena)
 
 function ordena() {
+    document.getElementById('divTable').style.display = 'none';
 
-    document.getElementById('divTable').innerHTML = ''
-    document.getElementById('divTable').style.width = '0';
-    document.getElementById('divTable').style.height = '0';
-    document.getElementById('divTable').style.display = 'none';
-    document.getElementById('divTable').style.display = 'none';
+    let tabelaOrdenada =
+        `<div id="divTableOrdenada">
+            <div id="idDiv1"><h3>Descrição</h3>
+                <ul id="ulOrdDiv1"></ul>
+            </div>
+            <div id="idDiv4"><h3>Importância</h3>
+                <ul id="ulOrdDiv2"></ul>
+            </div>
+        </div>`
 
     main = document.getElementById('main')
     main.innerHTML += `<div id="tabelaOrdenada"></div>`
-    tabela = document.getElementById('tabelaOrdenada')
+    const tabela = document.getElementById('tabelaOrdenada')
     tabela.innerHTML = tabelaOrdenada
 
     listaOutOrd1 = document.getElementById('ulOrdDiv1')
     listaOutOrd2 = document.getElementById('ulOrdDiv2')
 
-    lista.sort((a, b) => b.imp - a.imp)
+    const listaOrdenada = lista.sort((a, b) => b.imp - a.imp)
 
-    lista.forEach((elem, i) => {
+    listaOrdenada.forEach((elem, i) => {
         listaOutOrd1.innerHTML += `<li>${elem.desc}</li>`
         listaOutOrd2.innerHTML += `<li>${elem.imp}</li>`
     });
 }
-
-let tabelaOrdenada =
-    `<div id="divTableOrdenada">
-        <div id="idDiv1"><h3>Descrição</h3>
-            <ul id="ulOrdDiv1"></ul>
-        </div>
-        <div id="idDiv4"><h3>Importância</h3>
-            <ul id="ulOrdDiv2"></ul>
-        </div>
-    </div>`
