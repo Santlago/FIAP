@@ -11,7 +11,7 @@ public class TestePrincipal {
         Endereco endereco = new Endereco();
         EnderecoDao dao = new EnderecoDao();
 
-        endereco.setId(1);
+        endereco.setId(2);
         endereco.setCep("08557505");
         endereco.setRua("Av. dos santos");
         endereco.setNumero("4324");
