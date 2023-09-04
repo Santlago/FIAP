@@ -28,4 +28,15 @@ public class EnderecoDao {
         conexao.close();
         comandoSql.close();
     }
+
+    public void excluir(String numero) throws SQLException {
+        conexao = DBManager.getConnection();
+        PreparedStatement comandoSql = null;
+        String sql = "delete from endereco where numero = ?";
+        comandoSql = conexao.prepareStatement(sql);
+        comandoSql.setString(1, numero);
+        comandoSql.executeUpdate();
+        conexao.close();
+        comandoSql.close();
+    }
 }

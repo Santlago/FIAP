@@ -18,19 +18,20 @@ public class TestePrincipal {
     public static void main(String[] args) throws SQLException, IOException, InterruptedException {
 
         Scanner leitura = new Scanner(System.in);
+        EnderecoDao dao = new EnderecoDao();
         
         // Menu principal
         while (true) {
             System.out.println("""
                 1 - Adicionar endereço
+                2 - Excluir
                 0 - SAIR
                 """);
             var opcao = leitura.nextLine();
             switch (opcao) {
                 case "1":
                     // Conexao API Correios
-                    System.out.println("Opção 1");
-                    System.out.println("Digite um cep para busca: ");
+                    System.out.println("Digite o CEP: ");
                     var cep = leitura.nextLine();
             
                     String url = "http://viacep.com.br/ws/" + cep + "/json/";
@@ -44,27 +45,31 @@ public class TestePrincipal {
                         .send(request, BodyHandlers.ofString());
             
                     var json = response.body();
-                
-                    System.out.println(json);
-            
+                            
                     // Tratando dados
                     Gson gson = new Gson();
             
                     Endereco endereco = gson.fromJson(json, Endereco.class);
-                    EnderecoDao dao = new EnderecoDao();
                     
                     // Conexão banco de dados
-                    
-                    endereco.setNumero("4324");
-                    endereco.setBairro("Vila Márcia");
-                    endereco.setCidade("Suzano");
-                    endereco.setUf("SP");
-                    System.out.println(endereco);
+                    System.out.println("Digite o número: ");
+                    endereco.setNumero(leitura.nextLine());
             
                     try {
                         dao.inserir(endereco);
                         System.out.println("Endereço cadastrado com sucesso!");
                     } catch (SQLException e) {
+                        // TODO: handle exception
+                        e.printStackTrace();
+                    }
+                    break;
+                case "2":
+                    System.out.println("Digite o número do endereço que deseja excluir: ");
+                    var numDig = leitura.nextLine();
+                    try {
+                        dao.excluir(numDig);
+                        System.out.println("Endereço excluído com sucesso!");
+                    } catch (Exception e) {
                         // TODO: handle exception
                         e.printStackTrace();
                     }
