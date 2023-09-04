@@ -1,17 +1,22 @@
 package entity;
 
+import com.google.gson.annotations.SerializedName;
+
 public class Endereco {
     
     // attributes
-    private int id;
     private String cep;
+    @SerializedName("logradouro")
     private String rua;
     private String numero;
     private String bairro;
+    @SerializedName("localidade")
     private String cidade;
     private String uf;
 
     // constructors
+    
+
     public String toString(){
         return "Endereço:" +
                 "\nCEP:" + cep +
@@ -23,12 +28,6 @@ public class Endereco {
     }
 
     // getters and setters
-    public int getId() {
-        return id;
-    }
-    public void setId(int id) {
-        this.id = id;
-    }
     public String getCep() {
         return cep;
     }
