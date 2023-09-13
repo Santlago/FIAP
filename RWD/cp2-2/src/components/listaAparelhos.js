@@ -1,24 +1,55 @@
-import React from "react";
-import { ReactDOM } from "react";
+import Aparelho1 from "../../../public/aparelho1.jpg"
+import Aparelho2 from "../../../public/aparelho2.jpg"
 
 export const listaAparelhos = [
     {    
         id: 1,
-        descricao: 'Fiat Toro',
-        img: 'http://www.fiat.com.br/content/dam/fiat-brasil/desktop/produtos/modelos/226/versoes/22611X0/176.png'  
+        nome: 'saffa',
+        modelo: 'adsad',
+        marca: 'dfs', 
+        descricao: 'Ipad',
+        preco: 200,
+        img: <img src={Aparelho1}/>  
     },
     {    
         id: 2,
-        descricao: 'Fiat Argo',
-        img: 'http://argo.fiat.com.br/modules/home/data/tablet/background.jpg'  
+        nome: 'skldfa',
+        modelo: 'ssdd',
+        marca: 'hdbg', 
+        descricao: 'Fiat Torosda',
+        preco: 300,
+        img: <img src={Aparelho2}/>  
     },
     {    
         id: 3,
-        descricao: 'Golf 2017',
-        img: 'https://3.bp.blogspot.com/-bnzlXa1mIe0/WCXcyVh9aNI/AAAAAAAA1_g/xbgbYXeSCLQc7y5gXagH2SZhZW_SAtdzwCLcB/s1600/Novo-Golf-2017%2B%252815%2529.jpg'  
+        nome: 'syka',
+        modelo: 'yyj',
+        marca: 'fjfg', 
+        descricao: 'Fiat Torosa',
+        preco: 456,
+        img: <img src={Aparelho1}/>  
+    },
+    {    
+        id: 4,
+        nome: 'syha',
+        modelo: 'gdfg',
+        marca: 'kfng', 
+        descricao: 'Fiat Toroasd',
+        preco: 678,
+        img: <img src={Aparelho1}/>  
+    },
+    {    
+        id: 5,
+        nome: 'sdsfa',
+        modelo: 'gdfg',
+        marca: 'fhg', 
+        descricao: 'Fiat Torosd',
+        preco: 457,
+        img: <img src={Aparelho1}/>  
     }
   ];
-  var Images = React.createClass({
+
+/*var Images = React.createClass({
     render: function() {
       return (
         <div>  {listaAparelhos.map(function(i){
@@ -35,4 +66,4 @@ export const listaAparelhos = [
     )
   }
                                  });
-  ReactDOM.render(<Images />, document.getElementById('app'));
+  ReactDOM.render(<Images />, document.getElementById('app'));*/
