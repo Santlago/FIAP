@@ -8,6 +8,7 @@ export default function Menu() {
             <span> | </span>
             <Link to='/aparelhos'>Aparelhos</Link>
             <span> | </span>
+            <Link to='/aparelhos'>Aparelhos</Link>
         </nav>
     )
 }
