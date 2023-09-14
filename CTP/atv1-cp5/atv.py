@@ -36,6 +36,17 @@ def preenche_mult_registros(t: list, reg: dict) -> None:
         # cria uma cópia do ponteiro
         t.append(reg.copy())
 
+# Procedimento que consulta registro
+def consulta_registro(insta: str, t: list) -> None:
+    found = False
+    for i, elem in enumerate(t):
+        if elem['instagram'] == insta:
+            exibe_registro(t, i)
+            found = True
+            break
+    if not found:
+        print("Registro não encontrado.")
+
 # Lista de registros
 registros = []
 
@@ -47,6 +58,7 @@ while True:
     1 - CADASTRAR UM CONTATO
     2 - EXIBIR OS CONTATOS CADASTRADOS
     3 - PREENCHA REGISTROS
+    4 - CONSULTA REGISTROS
     -------------------------------
           """)
     opcao = input("Digite uma opção: ")
@@ -59,6 +71,9 @@ while True:
         case '3':
             reg = {}
             preenche_mult_registros(registros, reg)
+        case '4':
+            insta = input("Digite o instagram: ")
+            consulta_registro(insta, registros)
         case '0':
             break
         case _:
