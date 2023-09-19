@@ -1,5 +1,5 @@
-import Aparelho1 from "../../../public/aparelho1.jpg"
-import Aparelho2 from "../../../public/aparelho2.jpg"
+import Aparelho1 from "../../public/Aparelho1.jpg"
+import Aparelho2 from "../../public/aparelho2.jpg"
 
 export const listaAparelhos = [
     {    
