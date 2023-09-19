@@ -103,18 +103,30 @@ main .ad {
   justify-content: space-between;
 }
 
+.error a{
+  margin-top: 2rem;
+}
+
+.visualizar-produto a {
+  margin-top: 2rem;
+}
+
+#titulo {
+  padding-bottom: 1.5rem;
+}
+
 .lista-aparelhos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  background-color: rgb(203, 151, 255);
+  background-color: rgb(255, 179, 39);
   height: 80%;
   width: 60vh;
 }
 
 .lista-aparelhos h3 {
-  color: red;
   padding-bottom: .5rem;
+  color: rgb(32, 87, 255);
 }
 
 .aparelhos {
@@ -125,6 +137,15 @@ main .ad {
 .aparelhos img {
   height: 15vh;
   width: 15vh;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.aparelhos a {
+  color: black;
+}
+
+.aparelhos a:hover {
+  color: rgb(32, 87, 255);
 }
 
 .aparelhos img:hover {
@@ -132,9 +153,18 @@ main .ad {
   transition: transform 0.3s; /* Add a smooth transition effect */
 }
 
+.detalhes {
+  width: 50vh;
+  text-align: left;
+  background-color: rgb(255, 179, 39);
+  padding: 1rem;
+  border-radius: 0px 0px 8px 8px;
+}
+
 .visualizar-produto img {
   width: 50vh;
   height: 50vh;
+  border-radius: 8px 8px 0px 0px;
 }
 
 .visualizar-produto h1 {

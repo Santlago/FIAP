@@ -3,8 +3,8 @@ import { listaAparelhos } from "../../components/listaAparelhos";
 
 export default function Produtos () {
     return (
-        <main className="aparelhos">
-            <h1>Aparelhos</h1>
+        <main>
+            <h1 id="titulo">Aparelhos</h1>
             <div className="lista-aparelhos">
                 {
                     listaAparelhos.map(prod => (
