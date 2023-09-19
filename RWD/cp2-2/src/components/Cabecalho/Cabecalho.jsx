@@ -1,10 +1,10 @@
-import './Cabecalho.css'
+import { Link } from "react-router-dom"
 
 export const Cabecalho = () => {
 
     return (
-        <header className='header'>
-            <h1 className="titulo">Cabecalho</h1>
+        <header>
+            <h1>Cabeçalho</h1>
         </header>
     )
 }
