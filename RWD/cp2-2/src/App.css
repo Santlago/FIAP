@@ -1,7 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Pacifico&display=swap');
+
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1;
+  font-weight: 200;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: white;
+  text-decoration: inherit;
+}
+a:hover {
+  color: rgb(255, 179, 39);
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1;
 }
 
 #root {
@@ -15,7 +56,14 @@ header{
   align-items: center;
   width: 100vw;
   height: 8vh;
-  background-color: rgb(0, 247, 255);
+  background-color: rgb(255, 179, 39);
+}
+
+header h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
 }
 
 nav{
@@ -24,7 +72,7 @@ nav{
   align-items: center;
   width: 100vw;
   height: 4vh;
-  background-color: royalblue;
+  background-color: rgb(32, 87, 255);
 
   & a{
     color: white;
@@ -32,7 +80,8 @@ nav{
     padding: 15px;
 
     &:hover{
-      color: purple;
+      transition: 0.1s;
+      color: rgb(255, 179, 39);
     }
   }
 }
@@ -44,7 +93,7 @@ main{
   align-items: center;
   width: 100vw;
   height: 83vh;
-  background-color: aquamarine;
+  background-color: black;
 }
 
 main .ad {
@@ -59,7 +108,13 @@ main .ad {
   flex-direction: row;
   flex-wrap: wrap;
   background-color: rgb(203, 151, 255);
+  height: 80%;
   width: 60vh;
+}
+
+.lista-aparelhos h3 {
+  color: red;
+  padding-bottom: .5rem;
 }
 
 .aparelhos {
@@ -68,8 +123,22 @@ main .ad {
 }
 
 .aparelhos img {
-  height: 10vh;
-  width: 10vh;
+  height: 15vh;
+  width: 15vh;
+}
+
+.aparelhos img:hover {
+  transform: scale(1.1); /* 10% increase when hovering */
+  transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
+.visualizar-produto img {
+  width: 50vh;
+  height: 50vh;
+}
+
+.visualizar-produto h1 {
+  padding-bottom: 5vh;
 }
 
 footer{
@@ -78,5 +147,5 @@ footer{
   align-items: center;
   width: 100vw;
   height: 5vh;
-  background-color: darkblue;
+  background-color: rgb(32, 87, 255);
 }
