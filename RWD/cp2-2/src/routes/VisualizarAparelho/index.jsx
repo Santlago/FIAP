@@ -15,8 +15,11 @@ export default function VisualizarAparelho () {
             <h1>{produto.nome}</h1>
             <img src={`/imagens/aparelho${produto.id}.jpg`} alt="Aparelho Image" />
             <div className="detalhes">
-                <p>Marca: {produto.marca}</p>
-                <p>Modelo: {produto.modelo}</p>
+                <p><b>Marca: </b>{produto.marca}</p>
+                <p><b>Modelo: </b>{produto.modelo}</p>
+                <div className="preco">
+                    <p>R${produto.preco},00</p>
+                </div>
             </div>
             <Link to='/aparelhos'>Voltar para aparelhos</Link>
         </main>

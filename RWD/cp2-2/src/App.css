@@ -59,11 +59,38 @@ header{
   background-color: rgb(255, 179, 39);
 }
 
-header h1 {
+.logo {
   font-family: 'Josefin Sans', sans-serif;
   font-family: 'Pacifico', cursive;
   font-size: 4rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust the values as needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.animation {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    rgb(32, 87, 255) 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
 }
 
 nav{
@@ -99,8 +126,22 @@ main{
 main .ad {
   display: flex;
   background-color: black;
-  width: 100%;
   justify-content: space-between;
+  width: 100%;
+}
+
+.texto-principal {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.texto-principal h1 {
+  margin-bottom: 5rem;
+  margin-top: 2rem;
+}
+
+.texto-principal p {
+  font-size: 1.5rem;
 }
 
 .error a{
@@ -122,6 +163,7 @@ main .ad {
   background-color: rgb(255, 179, 39);
   height: 80%;
   width: 60vh;
+  border-radius: 8px;
 }
 
 .lista-aparelhos h3 {
@@ -137,7 +179,7 @@ main .ad {
 .aparelhos img {
   height: 15vh;
   width: 15vh;
-  border-radius: 8px 8px 0px 0px;
+  border-radius: 8px;
 }
 
 .aparelhos a {
@@ -149,8 +191,9 @@ main .ad {
 }
 
 .aparelhos img:hover {
-  transform: scale(1.1); /* 10% increase when hovering */
-  transition: transform 0.3s; /* Add a smooth transition effect */
+  transform: scale(1.1);
+  transition: transform 0.3s, margin 0.3s; 
+  margin-bottom: .5rem;
 }
 
 .detalhes {
@@ -159,6 +202,19 @@ main .ad {
   background-color: rgb(255, 179, 39);
   padding: 1rem;
   border-radius: 0px 0px 8px 8px;
+  font-weight: 400;
+}
+
+.preco {
+  text-align: center;
+  background-color: rgb(32, 87, 255);
+  margin-top: .5rem;
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  color: white; 
+  font-weight: bold; 
+  text-decoration: none; 
 }
 
 .visualizar-produto img {
@@ -178,4 +234,60 @@ footer{
   width: 100vw;
   height: 5vh;
   background-color: rgb(32, 87, 255);
+}
+
+footer p {
+  font-size: x-small;
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+/* Botão estilizado */
+.button-64 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-64:active,
+.button-64:hover {
+  outline: 0;
+}
+
+.button-64 span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.button-64:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .button-64 {
+    font-size: 24px;
+    min-width: 196px;
+  }
 }

@@ -4,7 +4,7 @@ export const Cabecalho = () => {
 
     return (
         <header>
-            <h1>EletroStore</h1>
+            <h1 className="logo">EletroStore</h1>
         </header>
     )
 }
