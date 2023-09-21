@@ -1,0 +1,4 @@
+{'nome': 'Edson', 'idade': 44, 'endereco': 'Rua Tal'}
+Nome..........: Edson
+Idade.........: Edson
+Endereço......: Edson
