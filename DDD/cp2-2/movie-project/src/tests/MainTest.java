@@ -24,16 +24,24 @@ public class MainTest {
         var busca = leitura.nextLine();
 
         String endereco = "https://www.omdbapi.com/?t=" + busca + "&apikey=da68d1f1";
-        HttpClient client = HttpClient.newHttpClient();
-        HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(endereco))
-                .build();
-        HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
-        String json = response.body();
-
-        Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
-        FilmeOmdb meufilmeOmdb = gson.fromJson(json, FilmeOmdb.class);
-        Filme meuFilme = new Filme(meufilmeOmdb);
-        System.out.println(meuFilme);
+        try {
+            HttpClient client = HttpClient.newHttpClient();
+            HttpRequest request = HttpRequest.newBuilder()
+                    .uri(URI.create(endereco))
+                    .build();
+            HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
+            String json = response.body();
+    
+            Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
+            FilmeOmdb meufilmeOmdb = gson.fromJson(json, FilmeOmdb.class);
+            Filme meuFilme = new Filme(meufilmeOmdb);
+            System.out.println(meuFilme);
+        } catch (NumberFormatException e) {
+            // TODO: handle exception
+            System.out.println("Aconteceu um erro!");
+            System.out.println(e.getMessage());
+        } catch (IllegalArgumentException e) {
+            System.out.println("Algu merro de argumento na busca, verifique o endereço");
+        }
     }
 }
