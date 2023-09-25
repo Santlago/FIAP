@@ -29,7 +29,8 @@ public class MainTest {
             HttpRequest request = HttpRequest.newBuilder()
                     .uri(URI.create(endereco))
                     .build();
-            HttpResponse<String> response = client.send(request, BodyHandlers.ofString());
+            HttpResponse<String> response = client
+                    .send(request, BodyHandlers.ofString());
             String json = response.body();
     
             Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
@@ -40,8 +41,11 @@ public class MainTest {
             // TODO: handle exception
             System.out.println("Aconteceu um erro!");
             System.out.println(e.getMessage());
+        } catch (com.google.gson.JsonSyntaxException e) {
+            System.out.println("Aconteceu um erro de sintaxe no JSON!");
+            System.out.println(e.getMessage());
         } catch (IllegalArgumentException e) {
-            System.out.println("Algu merro de argumento na busca, verifique o endereço");
+            System.out.println("Algum erro de argumento na busca, verifique o endereço! ");
         }
     }
 }

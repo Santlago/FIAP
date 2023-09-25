@@ -11,7 +11,9 @@ public class Filme {
     public Filme(FilmeOmdb meuFilmeOmdb) {
         this.nome = meuFilmeOmdb.title();
         this.anoDeLancamanto = Integer.valueOf(meuFilmeOmdb.year());
-        this.duracaoEmMinutos = Integer.valueOf(meuFilmeOmdb.runtime().substring(0, 3));
+        if (meuFilmeOmdb.runtime() != null) {
+            this.duracaoEmMinutos = Integer.valueOf(meuFilmeOmdb.runtime().substring(0, 2));
+        }
         this.trama = meuFilmeOmdb.plot();
     }
 
