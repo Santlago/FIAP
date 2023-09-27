@@ -32,7 +32,6 @@ public class MainTest {
             HttpResponse<String> response = client
                     .send(request, BodyHandlers.ofString());
             String json = response.body();
-    
             Gson gson = new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE).create();
             FilmeOmdb meufilmeOmdb = gson.fromJson(json, FilmeOmdb.class);
             Filme meuFilme = new Filme(meufilmeOmdb);
