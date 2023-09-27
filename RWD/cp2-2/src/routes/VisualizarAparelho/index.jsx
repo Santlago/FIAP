@@ -1,10 +1,9 @@
-import { Link, useNavigate, useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { listaAparelhos } from "../../components/listaAparelhos"
 
 export default function VisualizarAparelho () {
 
     const lista = listaAparelhos
-    const navegacao = useNavigate()
     const {id} = useParams()
 
     const proc = lista.filter(prod => prod.id == id)

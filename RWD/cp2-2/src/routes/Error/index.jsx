@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import Home from '../Error/index.jsx'
 
 export default function Error(){
 
