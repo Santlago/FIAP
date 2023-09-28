@@ -6,7 +6,7 @@ def validar_email(email):
     # Verifica se não há caracteres especiais no nome e sobrenome do email
     separado = email.split('@')
     nome = separado[0]
-    caracteres_especiais = "!#$%^&*()+=[]{};:'\"<>/?\\|_"
+    caracteres_especiais = "!#$%^&*()+=[]{};:'\"<>/?\\|_."
     for elem in nome:
         if elem in caracteres_especiais:
             return False
