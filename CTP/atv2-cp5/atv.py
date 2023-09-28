@@ -1,19 +1,16 @@
 def validar_email(email):
     # Verifica se o email começa com letra
-    if not email[0] in "abcdefghijklmnopqrstuvwxyz":
+    if not email[0].lower() in "abcdefghijklmnopqrstuvwxyz":
         return False
 
     # Verifica se não há caracteres especiais no nome e sobrenome do email
-    def tem_caractere_especial(email):
-        separado = email.split('@')
-        nome = separado[0]
-        caracteres_especiais = "!#$%^&*()+=[]{};:'\"<>/?\\|"
-        for elem in nome:
-            if elem in caracteres_especiais:
-                return True
+    separado = email.split('@')
+    nome = separado[0]
+    caracteres_especiais = "!#$%^&*()+=[]{};:'\"<>/?\\|_"
+    for elem in nome:
+        if elem in caracteres_especiais:
+            return False
 
-    if tem_caractere_especial('edsonoliveira@fiap.com.br'):
-        return False
 
     # Verifica se há somente um arroba
     if email.count('@') != 1:
@@ -28,12 +25,12 @@ def validar_email(email):
         return False
 
     # Verifica se o ponto não está no final do email
-    if email.endswith('.'):
+    if email[-1] == '.':
         return False
 
     # Verifica se há um ou dois pontos no sobrenome do email
-    parts = email.split('@')
-    if parts[1].count('.') not in [1, 2]:
+    parte = email.split('@')
+    if parte[1].count('.') not in [1, 2]:
         return False
 
     return True
@@ -41,7 +38,9 @@ def validar_email(email):
 while True:
     email = input("Digite um endereço de e-mail: ")
     if validar_email(email):
-        print("Email correto")
+        arq = open("RM552270.txt", "w", encoding="utf-8")
+        arq.write(email)
+        print("Gravado com sucesso!")
         break
     else:
-        print("Email incorreto. Tente novamente.")
+        print("E-mail inválido, digite outro correto!")
