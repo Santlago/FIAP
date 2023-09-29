@@ -1,5 +1,6 @@
 /**
  * A classe FilmeOmdb representa informações de um filme obtidas a partir da API OMDB.
+ * Link da API: https://www.omdbapi.com/
  * Ela inclui o título do filme, o ano de lançamento, a duração e a trama.
  * Esta classe é uma classe de registro (record) que fornece uma maneira concisa de criar
  * objetos imutáveis com atributos de leitura.
