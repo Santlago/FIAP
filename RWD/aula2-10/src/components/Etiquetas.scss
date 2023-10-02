@@ -1,0 +1,35 @@
+.divEtiqueta {
+    background-color: blueviolet;
+    min-height: 100vh;
+    padding: 20px;
+
+    form {
+        width: 400px;
+        margin: 0 auto;
+        color: white;
+
+        fieldset {
+            padding: 20px;
+            margin-bottom: 20px;
+
+            legend {
+                font-size: 20px;
+                text-align: center;
+                padding: 10px;
+            }
+
+            label {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 10px;
+            }
+
+            input {
+                padding: 5px;
+                border-radius: 5px; /*Boa prática: colocar de border-radius o mesmo de padding*/
+                border: none;
+                outline-color: gray;
+            }
+        }
+    }
+}
