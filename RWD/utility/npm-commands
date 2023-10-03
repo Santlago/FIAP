@@ -1,0 +1,8 @@
+[9/4, 8:02 AM] Luis Carlos de Souza Silva
+    npm create vite@latest . -- --template react
+​[9/4, 8:02 AM] Luis Carlos de Souza Silva
+    npm install
+​[9/4, 8:02 AM] Luis Carlos de Souza Silva
+    npm install react-router-dom
+​[9/4, 8:02 AM] Luis Carlos de Souza Silva
+    npm run dev
