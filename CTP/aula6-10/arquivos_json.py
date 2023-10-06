@@ -57,3 +57,15 @@ print(f"-----------------------------\nExibindo JSON\n{pessoas_json}\n----------
 # abrindo um arquivo json para gravação
 with open("arquivo.json", "w+", encoding="utf-8") as file:
     file.write(pessoas_json)
+
+# lendo u marquivo em um formato json
+with open("arquivo.json", "r", encoding="utf-8") as file:
+    file.seek(0)
+    pessoas_json = file.read()
+    pessoas = json.loads(pessoas_json)
+
+# exibição "apresentável" para o usuário
+for k, v in pessoas.items():
+    print(f"Registro.....: {k}")
+    for k1, v1 in v.items():
+        print("\t" + k1 + ":" + str(v1))
