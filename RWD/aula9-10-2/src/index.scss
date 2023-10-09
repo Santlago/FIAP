@@ -1,0 +1,58 @@
+.divCadastro {
+    padding: 20px;
+    background-color: rgb(56, 41, 124);
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+
+    form {
+        width: 30%;
+        margin: 0 auto;
+        color: white;
+        margin-bottom: 5rem;
+
+        fieldset {
+            background-color: gray;
+        }
+
+        legend{
+            font-size: 20px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        label{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        input{
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            outline-color: gray;
+        }
+
+        button{
+            padding: 5px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #3f3;  /* #33ff33 */
+        }
+    }
+
+    .painel {
+        background-color: gray;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .etiqueta {
+            color: white;
+            width: 30%;
+            background-color: black;
+            margin: 5px;
+        }
+    }
+}
