@@ -1,0 +1,15 @@
+.containerPedidos {
+    
+    main {
+        display: grid;
+        grid-template-rows: 60% 40%;
+
+        .forms {
+            background-color: pink;
+        }
+
+        .lista-pedidos {
+            background-color: aquamarine;
+        }
+    }
+}

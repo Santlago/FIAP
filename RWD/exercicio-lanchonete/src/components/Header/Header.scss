@@ -5,4 +5,52 @@ header {
     width: 100%;
     background-color: $primary-color;
     
+    .logo {
+        width: 70%;
+        height: 70%;
+
+        a {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            
+            h1 {
+                color: $title-color;
+                font-family: 'Libre Baskerville', serif;
+                font-size: 2.5rem;
+            }
+
+            img {
+                height: 100%;
+                margin: 1rem;
+                border-radius: 10px;
+            }
+        }
+
+    }
+
+    nav {
+        
+        
+        a {
+            background-color: $secondary-color;
+            color: $title-color;  
+            padding: .3rem;
+            text-shadow: .1rem .1rem .3rem black;
+
+            &:hover {
+                background-color: rgb(197, 144, 9);
+            }
+        }
+
+        #men1 {
+            border-radius: 10px 0 0 10px;
+        }
+
+        #men2 {
+            border-radius: 0 10px 10px 0 ;
+        }
+    }
 }

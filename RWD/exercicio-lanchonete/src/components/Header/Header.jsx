@@ -4,14 +4,17 @@ import { Link } from "react-router-dom"
 
 export const Header = () => {
     return(
-        <header>
-            <h1>Burguer House</h1>
+        <header>                
+            <div className="logo">
+                <Link to='/'>
+                    <h1>Burguer House</h1>
+                    <img src="/images/logo-burguer-house.png" alt="bh-logo" />
+                </Link>
+            </div>
             <nav>
-                <Link to='/' >Home</Link>
+                <Link to='/pedidos' id='men1'>Pedidos</Link>
                 <span> | </span>
-                <Link to='/pedidos'>Pedidos</Link>
-                <span> | </span>
-                <Link to='/cardapio'>Cardapio</Link>
+                <Link to='/cardapio' id='men2'>Cardapio</Link>
             </nav>
         </header>
     )

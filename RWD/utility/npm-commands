@@ -6,3 +6,5 @@
     npm install react-router-dom
 ​[9/4, 8:02 AM] Luis Carlos de Souza Silva
     npm run dev
+    
+npm install @hookform/resolvers yup
