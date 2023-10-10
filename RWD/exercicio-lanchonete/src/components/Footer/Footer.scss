@@ -1,5 +1,8 @@
+@import '../../index.scss';
+
+
 footer {
-    height: 15vh;
+    height: 10vh;
     width: 100%;
-    background-color: rgb(168, 168, 168);
+    background-color: $secondary-color;
 }

@@ -5,6 +5,8 @@ import './index.scss'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { Error } from './routes/Error/Error.jsx'
 import { Home } from './routes/Home/Home.jsx'
+import { Cardapio } from './routes/Cardapio/Cardapio.jsx'
+import { Pedidos } from './routes/Pedidos/Pedidos.jsx'
 
 const router = createBrowserRouter([
   {
@@ -15,6 +17,14 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home/>
+      },
+      {
+        path: '/cardapio',
+        element: <Cardapio/>
+      },
+      {
+        path: '/pedidos',
+        element: <Pedidos/>
       }
     ]
   }
