@@ -1,3 +1,5 @@
+@import '../../index.scss';
+
 .containerPedidos {
     
     main {
@@ -5,11 +7,68 @@
         grid-template-rows: 60% 40%;
 
         .forms {
-            background-color: pink;
+            background-color: $primary-color;
+            text-align: center;
+            
+            form {
+                width: 50%;
+                margin: 0 auto;
+            }
+
+            fieldset {
+                background-color: $secondary-color;
+                padding: 20px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+
+                legend{
+                    font-size: 20px;
+                    text-align: center;
+                    padding: 10px;
+                }
+
+                label{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 10px;
+                }
+
+                input{
+                    padding: 5px;
+                    border-radius: 5px;
+                    border: none;
+                    outline-color: gray;
+                    box-shadow: .2rem .2rem .5rem black;
+                }
+
+                button{
+                    padding: 5px 20px;
+                    border-radius: 5px;
+                    border: none;
+                    background-color: #3f3;  /* #33ff33 */
+                }
+            }
         }
 
-        .lista-pedidos {
-            background-color: aquamarine;
+        .painel-pedidos {
+            width: 100%;
+            background-color: $primary-color;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            overflow: auto;
+
+            .etiqueta {
+                background-color: $secondary-color;
+                padding: 10px;
+                width: calc(25% - 20px);
+                margin: auto .6rem;
+                border-radius: 5px;
+
+                p{
+                    margin-bottom: 5px;
+                }
+            }
         }
     }
 }

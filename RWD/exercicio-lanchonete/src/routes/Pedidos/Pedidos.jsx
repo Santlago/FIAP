@@ -31,8 +31,7 @@ export const Pedidos = () => {
                 <div className="forms">
                     <form onSubmit={handleSubmit(inserirPedido)}>
                         <fieldset>
-                            <legend>Pedido</legend>
-                            <label>Mesa
+                                <label>Mesa
                                 <input type="text" {...register("mesa")}/>
                             </label>
                             <label>Pedido
