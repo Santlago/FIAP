@@ -23,6 +23,7 @@ export const Pedidos = () => {
 
     const inserirPedido = (pedido) => {
         setListaPedidos([...listaPedidos, pedido])
+        console.log(listaPedidos)
     }
 
     return(
