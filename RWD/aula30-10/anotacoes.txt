@@ -1,0 +1,9 @@
+C (create)
+R (read)
+U (update)
+D (delete)
+
+npx create-next-app@latest .
+npm install sass
+npm install --save react-icons
+npm install --save -D -g json-server
