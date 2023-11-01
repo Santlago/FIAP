@@ -2,15 +2,21 @@
   "produto": [
     {
       "id": 1,
-      "titulo": "Teclado",
-      "quantidade": 2,
-      "preco": 120
+      "titulo": "Impressora",
+      "quantidade": "8",
+      "preco": "750.75"
     },
     {
       "id": 2,
-      "titulo": "Monitor",
-      "quantidade": 3,
-      "preco": 900
+      "titulo": "Mouse",
+      "quantidade": "2",
+      "preco": "915.99"
+    },
+    {
+      "titulo": "Cadeira",
+      "quantidade": "1",
+      "preco": "1000",
+      "id": 3
     }
   ]
 }

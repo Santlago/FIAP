@@ -42,7 +42,17 @@ export default function Incluir({params}) {
 
     return(
         <main>
+            <h1>Formulário Produtos</h1>
 
+            <form onSubmit={handleSubmit}>
+                <input type="text" name="titulo" value={novo.titulo}
+                placeholder="Título" onChange={handleChange} /> <br/>
+                <input type="number" name="quantidade" value={novo.quantidade}
+                placeholder="Quantidade" onChange={handleChange} /> <br/>
+                <input type="number" name="preco" value={novo.preco}
+                placeholder="Preço" onChange={handleChange} step={0.01} /> <br/>
+                <button type="submit">Enviar</button>
+            </form>
         </main>
     )
 }
