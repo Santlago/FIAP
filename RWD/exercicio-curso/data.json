@@ -1,0 +1,16 @@
+{
+  "curso": [
+    {
+      "id": 1,
+      "curso": "JavaScript",
+      "modulos": 5,
+      "duracao": "121"
+    },
+    {
+      "id": 2,
+      "curso": "Java",
+      "modulos": "10",
+      "duracao": 160
+    }
+  ]
+}

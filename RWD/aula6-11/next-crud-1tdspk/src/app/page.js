@@ -17,13 +17,13 @@ export default function Home() {
     },[]
   )
 
-    const handleDelete = (id)=>{
-      fetch(`http://localhost:5000/produto/${id}`,{
-        method:'delete'
-      })
-      .then(window.location = '/')
-      .catch(error=> console.error(error))
-    }
+  const handleDelete = (id)=>{
+    fetch(`http://localhost:5000/produto/${id}`,{
+      method:'delete'
+    })
+    .then(window.location = '/')
+    .catch(error=> console.error(error))
+  }
 
 
   return (
