@@ -1,0 +1,28 @@
+{
+  "produto": [
+    {
+      "id": 1,
+      "titulo": "Teclado",
+      "quantidade": 2,
+      "preco": 120
+    },
+    {
+      "id": 3,
+      "titulo": "Monitor",
+      "quantidade": 8,
+      "preco": 920
+    },
+    {
+      "titulo": "Cadeira",
+      "quantidade": "3",
+      "preco": "1100",
+      "id": 5
+    },
+    {
+      "titulo": "Impressora",
+      "quantidade": "1",
+      "preco": "250",
+      "id": 6
+    }
+  ]
+}
