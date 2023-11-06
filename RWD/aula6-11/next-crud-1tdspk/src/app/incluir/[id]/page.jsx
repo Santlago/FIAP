@@ -6,7 +6,6 @@ import { FaLocationArrow, FaRegTimesCircle } from 'react-icons/fa'
 
 
 export default function Incluir({params}){
-
     const prodId = params.id == 0 ? '' : params.id
 
     const [novo, setNovo] = useState({
