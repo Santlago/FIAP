@@ -1,0 +1,14 @@
+Configuração do web.xml:
+
+    <filter>
+        <filter-name>CorsFilter</filter-name>
+        <filter-class>br.com.fiap.resource.CORSFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>CorsFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+</web-app>
+
+Explicando CorsFilter:
+https://felipenipo.wordpress.com/2015/04/10/implementando-cors-em-web-services-com-jax-rs/
