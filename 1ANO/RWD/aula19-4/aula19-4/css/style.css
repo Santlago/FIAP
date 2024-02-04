@@ -1,0 +1,23 @@
+h1{
+    width: 300px;;
+}
+
+a{
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: rgb(163, 163, 163);
+    border-radius: 5px;
+    width: 100px;
+    height: 25px;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: grey;
+    transition: 0.3s;
+}
+
+p {
+    display: none;
+}

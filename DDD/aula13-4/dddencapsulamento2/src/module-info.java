@@ -1,2 +1,0 @@
-module dddencapsulamento2 {
-}
