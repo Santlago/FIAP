@@ -6,4 +6,3 @@
   <li>cannery - versao pre pronta para produção bugs encontrados sao aceitaveis para produção</li>
   <li>release candidate - candidata a versao oficial bugs muito especificos mas que tenham um impacto grande</li>
 </ul>
-teste
