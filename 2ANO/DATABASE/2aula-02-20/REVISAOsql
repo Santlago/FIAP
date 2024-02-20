@@ -1,0 +1,13 @@
+SET SERVEROUTPUT ON;
+DECLARE
+    V_1 NUMBER;
+    V_2 V_1%TYPE;
+BEGIN
+    V_1 := 10;
+    V_2 := 555;
+    
+    -- PRINT
+    DBMS_OUTPUT.PUT_LINE(V_1);
+    DBMS_OUTPUT.PUT_LINE(V_2);
+    
+END;

@@ -1,0 +1,12 @@
+SET SERVEROUTPUT ON;
+DECLARE
+    V_REAL NUMBER;
+    V_DOLAR V_REAL%TYPE;
+BEGIN
+    V_DOLAR := 45;
+    v_real := V_DOLAR * 4.96;
+    
+    -- PRINT
+    DBMS_OUTPUT.PUT_LINE('O VALOR EM REAIS É ' || V_REAL || 'O VALOR EM DOLAR É ' || V_DOLAR);
+    
+END;
