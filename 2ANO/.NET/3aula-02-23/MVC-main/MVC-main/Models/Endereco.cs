@@ -3,6 +3,6 @@
     public class Endereco
     {
         public int Id { get; set; }
-        public required string Cep { get; set; }
+        public string Cep { get; set; }
     }
 }

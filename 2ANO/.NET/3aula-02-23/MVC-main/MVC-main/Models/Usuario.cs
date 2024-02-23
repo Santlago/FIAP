@@ -2,9 +2,23 @@
 {
     public class Usuario : Auditoria
     {
-        public required string Nome { get; set; }
+        private string Nome { get; set; }
         public DateTime DataNascimento { get; set; }
-        public required string Email { get; set; }
-        public required Endereco Endereco { get; set; }
+        public string Email { get; set; }
+        public Endereco Endereco { get; set; }
+
+        public void SetNome(string nome)
+        {
+            if (nome == "")
+            {
+                throw new Exception("O nome não pode ser vazio");
+            }
+            Nome = nome;
+        }
+
+        public string GetNome()
+        {
+            return Nome;
+        }
     }
 }
