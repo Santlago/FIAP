@@ -1,10 +1,14 @@
 package com.caiosilva.aula28fev
 
+import android.content.DialogInterface
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import com.caiosilva.aula28fev.databinding.FragmentPrimeiroBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -21,6 +25,8 @@ class PrimeiroFragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private lateinit var binding: FragmentPrimeiroBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -33,8 +39,39 @@ class PrimeiroFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        binding = FragmentPrimeiroBinding.inflate(inflater)
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_primeiro2, container, false)
+
+        binding.buttonPrimeiroFragment.text = param1
+        binding.buttonPrimeiroFragment.setOnClickListener {
+            showDialog()
+        }
+
+        return binding.root
+    }
+
+    private fun showDialog() {
+        val dialog = AlertDialog.Builder(requireContext())
+
+        dialog.setMessage(param1)
+        dialog.setPositiveButton(
+            param1,
+            object : DialogInterface.OnClickListener {
+                override fun onClick(dialog: DialogInterface?, which: Int) {
+                    Toast.makeText(requireContext(), param1, Toast.LENGTH_SHORT).show()
+                }
+            }
+        )
+        dialog.setNegativeButton(
+            param2,
+            object : DialogInterface.OnClickListener {
+                override fun onClick(dialog: DialogInterface?, which: Int) {
+                    Toast.makeText(requireContext(), param2, Toast.LENGTH_SHORT).show()
+                }
+            }
+        )
+
+        dialog.show()
     }
 
     companion object {
