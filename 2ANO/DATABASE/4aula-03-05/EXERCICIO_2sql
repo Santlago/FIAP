@@ -1,3 +1,13 @@
+
+select * from pais;
+select * from ESTADO;
+insert into pais values(3, 'BOLIVIA');
+insert into estado values(2, 'RJ', 1);
+insert into estado values(5, 'PB', 3);
+UPDATE ESTADO SET ID_ESTADO = 4 WHERE ID_ESTADO = 3;
+ALTER TABLE PAIS 
+RENAME COLUMN ID TO ID_PAIS;
+
 SET SERVEROUTPUT ON;
 
 DECLARE
@@ -5,11 +15,34 @@ DECLARE
     V_ESTADO VARCHAR2(30);
     V_PAIS VARCHAR2(30);
 BEGIN
-    SELECT A.NOME,
-           B.NOME INTO V_PAIS, V_ESTADO
-    FROM PAIS A
-    INNER JOIN ESTADO B
-    ON (A.ID=B.ID_ESTADO);
-    
-    dbms_output.PUT_LINE(V_PAIS, V_ESTADO);
+    -- Utilizando um cursor para processar todas as linhas retornadas
+    FOR rec IN (SELECT A.NOME AS PAIS,
+                        B.NOME AS ESTADO
+                 FROM PAIS A
+                 INNER JOIN ESTADO B
+                 ON (A.ID_PAIS=B.ID_ESTADO))
+    LOOP
+        -- Atribuindo os valores do cursor às variáveis
+        V_PAIS := rec.PAIS;
+        V_ESTADO := rec.ESTADO;
+
+        -- Exibindo os valores
+        dbms_output.PUT_LINE(V_PAIS || ', ' || V_ESTADO);
+    END LOOP;
 END;
+
+-- SET SERVEROUTPUT ON;
+
+-- DECLARE
+
+--     V_ESTADO VARCHAR2(30);
+--     V_PAIS VARCHAR2(30);
+-- BEGIN
+--     SELECT A.NOME,
+--            B.NOME INTO V_PAIS, V_ESTADO
+--     FROM PAIS A
+--     INNER JOIN ESTADO B
+--     ON (A.ID=B.ID_ESTADO);
+    
+--     dbms_output.PUT_LINE(V_PAIS || ', ' || V_ESTADO);
+-- END;
