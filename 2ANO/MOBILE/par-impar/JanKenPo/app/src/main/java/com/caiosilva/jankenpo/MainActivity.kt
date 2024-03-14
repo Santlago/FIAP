@@ -15,61 +15,99 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
+
+        var opcaoSelecionada = ""
+        var numeroSelecionado = ""
+
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.buttonViewPar.setOnClickListener {
+            println("Par")
+            opcaoSelecionada = "Par"
+            val result = chooseWinner(numeroSelecionado, opcaoSelecionada)
+            numeroSelecionado = result.first
+            opcaoSelecionada = result.second
+        }
+        binding.buttonViewImpar.setOnClickListener {
+            println("Impar")
+            opcaoSelecionada = "Impar"
+            val result = chooseWinner(numeroSelecionado, opcaoSelecionada)
+            numeroSelecionado = result.first
+            opcaoSelecionada = result.second
+        }
+
         binding.textView1.setOnClickListener {
             println("Número 1")
-            Toast.makeText(this, chooseWinner(0, onOptionSelected()), Toast.LENGTH_LONG).show()
+            numeroSelecionado = "1"
+            val result = chooseWinner(numeroSelecionado, opcaoSelecionada)
+            numeroSelecionado = result.first
+            opcaoSelecionada = result.second
+//            Toast.makeText(this, chooseWinner(0, onOptionSelected()), Toast.LENGTH_LONG).show()
         }
 
         binding.textView2.setOnClickListener {
             println("Número 2")
-            Toast.makeText(this, chooseWinner(1, onOptionSelected()), Toast.LENGTH_LONG).show()
+            numeroSelecionado = "2"
+            val result = chooseWinner(numeroSelecionado, opcaoSelecionada)
+            numeroSelecionado = result.first
+            opcaoSelecionada = result.second
+//            Toast.makeText(this, chooseWinner(1, onOptionSelected()), Toast.LENGTH_LONG).show()
         }
 
         binding.textView3.setOnClickListener {
-            println("cNúmero 3")
-            Toast.makeText(this, chooseWinner(2, onOptionSelected()), Toast.LENGTH_LONG).show()
+            println("Número 3")
+            numeroSelecionado = "3"
+            val result = chooseWinner(numeroSelecionado, opcaoSelecionada)
+            numeroSelecionado = result.first
+            opcaoSelecionada = result.second
+//            Toast.makeText(this, chooseWinner(2, onOptionSelected()), Toast.LENGTH_LONG).show()
         }
 
         binding.textView4.setOnClickListener {
             println("Número 4")
-            Toast.makeText(this, chooseWinner(2, onOptionSelected()), Toast.LENGTH_LONG).show()
+            numeroSelecionado = "4"
+            val result = chooseWinner(numeroSelecionado, opcaoSelecionada)
+            numeroSelecionado = result.first
+            opcaoSelecionada = result.second
+//            Toast.makeText(this, chooseWinner(3, onOptionSelected()), Toast.LENGTH_LONG).show()
         }
 
         binding.textView5.setOnClickListener {
             println("Número 5")
-            Toast.makeText(this, chooseWinner(2, onOptionSelected()), Toast.LENGTH_LONG).show()
+            numeroSelecionado = "5"
+            val result = chooseWinner(numeroSelecionado, opcaoSelecionada)
+            numeroSelecionado = result.first
+            opcaoSelecionada = result.second
+//            Toast.makeText(this, chooseWinner(4, onOptionSelected()), Toast.LENGTH_LONG).show()
         }
+
     }
 
-    private fun onOptionSelected(): Int {
+    fun chooseWinner(numeroSelecionado: String, opcaoSelecionada: String): Pair<String, String> {
+        if (numeroSelecionado != "" && opcaoSelecionada != "") {
+            val sistema = onOptionSelected() // Assuming this function returns the system's choice
+            val sistemaInt = sistema.toInt()
+            val numeroSelecionadoInt = numeroSelecionado.toInt()
+
+            val resultado = if ((sistemaInt + numeroSelecionadoInt) % 2 == 0 && opcaoSelecionada == "Par" ||
+                (sistemaInt + numeroSelecionadoInt) % 2 == 1 && opcaoSelecionada == "Impar") {
+                "Você ganhou!"
+            } else {
+                "Você perdeu!"
+            }
+
+            Toast.makeText(this, resultado, Toast.LENGTH_LONG).show()
+            return Pair("", "")
+        }
+        return Pair(numeroSelecionado, opcaoSelecionada)
+    }
+
+    private fun onOptionSelected(): String {
         val appChoice: Int = Random.nextInt(4)
-        binding.textViewAppChoice.setText(appChoice)
-
-        return appChoice
+        println(appChoice)
+        binding.textViewAppChoice.text = options[appChoice]
+        return options[appChoice]
     }
 
-    private fun chooseWinner(playerChoice: Int, appChoice: Int): String {
-        val result = listOf(
-            listOf(
-                getString(R.string.players_draw, options[playerChoice]),
-                getString(R.string.player_wins, options[playerChoice]),
-                getString(R.string.player_loses, options[playerChoice])
-            ),
-            listOf(
-                getString(R.string.player_loses, options[playerChoice]),
-                getString(R.string.players_draw, options[playerChoice]),
-                getString(R.string.player_wins, options[playerChoice])
-            ),
-            listOf(
-                getString(R.string.player_wins, options[playerChoice]),
-                getString(R.string.player_loses, options[playerChoice]),
-                getString(R.string.players_draw, options[playerChoice])
-            )
-        )
-
-        return result[playerChoice][appChoice]
-    }
 }
