@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="@android:dimen/app_icon_size"
+    >
+
+    <TextView
+        android:id="@+id/textViewAppChoice"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="Sistema"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:text="1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:text="2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:text="3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:text="4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:text="5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            />
+<!--        <ImageView-->
+<!--            android:id="@+id/imageViewPapel"-->
+<!--            android:layout_width="88dp"-->
+<!--            android:layout_height="88dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:src="@drawable/papel" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageViewPedra"-->
+<!--            android:layout_width="88dp"-->
+<!--            android:layout_height="88dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:src="@drawable/pedra" />-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageViewTesoura"-->
+<!--            android:layout_width="88dp"-->
+<!--            android:layout_height="88dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:src="@drawable/tesoura" />-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonViewPar"
+            android:text="Par"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:id="@+id/buttonViewImpar"
+            android:text="Impar"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
