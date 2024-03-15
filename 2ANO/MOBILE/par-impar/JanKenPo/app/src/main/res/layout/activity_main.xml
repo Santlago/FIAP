@@ -70,26 +70,6 @@
             android:layout_weight="1"
             android:textAlignment="center"
             />
-<!--        <ImageView-->
-<!--            android:id="@+id/imageViewPapel"-->
-<!--            android:layout_width="88dp"-->
-<!--            android:layout_height="88dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:src="@drawable/papel" />-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/imageViewPedra"-->
-<!--            android:layout_width="88dp"-->
-<!--            android:layout_height="88dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:src="@drawable/pedra" />-->
-
-<!--        <ImageView-->
-<!--            android:id="@+id/imageViewTesoura"-->
-<!--            android:layout_width="88dp"-->
-<!--            android:layout_height="88dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:src="@drawable/tesoura" />-->
 
     </LinearLayout>
     <LinearLayout
