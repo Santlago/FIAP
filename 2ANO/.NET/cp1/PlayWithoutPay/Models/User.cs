@@ -1,32 +1,26 @@
-﻿namespace PlayWithoutPay.Models
+﻿using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
+using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages.Manage;
+using System.Collections.Generic;
+
+namespace PlayWithoutPay.Models
 {
-    public class User
+    public class User : Account
     {
-        public User(string login, string password, int id = 0)
+        public User() { }
+        public User(string login, string password, int id, string email = "") : base(login, password, id)
         {
-            if (login == "")
-            {
-                throw new Exception("Login can't be blank");
-            }
-            if (id == 0)
-            {
-                Random random = new();
-                Id = random.Next(1, 10000);
-            }
-            else
-            {
-                Id = id;
-            }
-            Login = login;
-            Password = password;
+            favoriteGames = new List<Game>(); 
         }
 
-        private int Id { get; set; }
+        protected string Email { get; set; }
 
-        private string Login { get; set; }
+        protected List<Game> favoriteGames { get; set; }
 
-        private string Password { get; set; }
+        public override void Signin()
+        {
+            base.Signin();
 
-        private List<Game> favoriteGames = new List<Game>();
+            throw new NotImplementedException();
+        }
     }
 }

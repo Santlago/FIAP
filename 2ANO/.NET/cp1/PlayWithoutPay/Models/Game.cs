@@ -3,20 +3,26 @@
     public class Game
     {
         public Game(string name, int id = 0) {
-            if (name == "")
+            try
             {
-                throw new Exception("Login can't be blank");
-            }
-            if (id == 0)
+                if (name == "")
+                {
+                    throw new Exception("Login can't be blank");
+                }
+                if (id == 0)
+                {
+                    Random random = new Random();
+                    Id = random.Next(1, 10000);
+                }
+                else
+                {
+                    Id = id;
+                }
+                Name = name;
+            } catch (Exception ex) 
             {
-                Random random = new Random();
-                Id = random.Next(1, 10000);
+                throw ex;
             }
-            else
-            {
-                Id = id;
-            }
-            Name = name;
         }
 
         public int Id { get; set; }

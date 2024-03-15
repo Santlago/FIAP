@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PlayWithoutPay")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+583f90cb35ea7874d99bc696acb162f0c3bd86a6")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+055239f730e322a09bba8f2279d266e2236bf094")]
 [assembly: System.Reflection.AssemblyProductAttribute("PlayWithoutPay")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PlayWithoutPay")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

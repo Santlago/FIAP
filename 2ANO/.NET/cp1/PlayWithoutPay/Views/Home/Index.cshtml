@@ -1,8 +1,21 @@
-﻿@{
+﻿@model PlayWithoutPay.Models.User
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome to PlayWithoutPay</h1>
     <p>Discover thousands of games free to play!</a>.</p>
+
+    @if (Model != null && !string.IsNullOrEmpty(Model.Login))
+    {
+        <p>Logged</p>
+        <p>Welcome, @Model.Login!</p>
+        @Html.ActionLink("See our games", "Index", "Game")
+    }
+    else
+    {
+        @Html.ActionLink("Login", "Login", "User")
+    }
 </div>

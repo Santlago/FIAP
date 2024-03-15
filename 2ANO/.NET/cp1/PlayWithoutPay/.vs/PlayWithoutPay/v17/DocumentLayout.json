@@ -3,32 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|c:\\users\\breno\\gitclones\\fiap\\fiap\\2ano\\.net\\cp1\\playwithoutpay\\views\\game\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|solutionrelative:views\\game\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|c:\\users\\breno\\gitclones\\fiap\\fiap\\2ano\\.net\\cp1\\playwithoutpay\\models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|solutionrelative:models\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|c:\\users\\breno\\gitclones\\fiap\\fiap\\2ano\\.net\\cp1\\playwithoutpay\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|solutionrelative:controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|c:\\users\\breno\\gitclones\\fiap\\fiap\\2ano\\.net\\cp1\\playwithoutpay\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|c:\\users\\breno\\gitclones\\fiap\\fiap\\2ano\\.net\\cp1\\playwithoutpay\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|c:\\users\\breno\\gitclones\\fiap\\fiap\\2ano\\.net\\cp1\\playwithoutpay\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|c:\\users\\breno\\gitclones\\fiap\\fiap\\2ano\\.net\\cp1\\playwithoutpay\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|solutionrelative:models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|c:\\users\\breno\\gitclones\\fiap\\fiap\\2ano\\.net\\cp1\\playwithoutpay\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|c:\\users\\breno\\gitclones\\fiap\\fiap\\2ano\\.net\\cp1\\playwithoutpay\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|solutionrelative:models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|c:\\users\\breno\\gitclones\\fiap\\fiap\\2ano\\.net\\cp1\\playwithoutpay\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|solutionrelative:controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|c:\\users\\breno\\gitclones\\fiap\\fiap\\2ano\\.net\\cp1\\playwithoutpay\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|solutionrelative:views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|c:\\users\\breno\\gitclones\\fiap\\fiap\\2ano\\.net\\cp1\\playwithoutpay\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{1B8F9849-009D-469C-BE45-E4C847A2F0A2}|PlayWithoutPay.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,68 +34,59 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAB4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-08T16:35:09.529Z"
+              "DocumentIndex": 2,
+              "Title": "Account.cs",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Models\\Account.cs",
+              "RelativeDocumentMoniker": "Models\\Account.cs",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Models\\Account.cs",
+              "RelativeToolTip": "Models\\Account.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T22:16:40.562Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Views\\Game\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Game\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Views\\Game\\Index.cshtml",
-              "RelativeToolTip": "Views\\Game\\Index.cshtml",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAAAC8AAAA8AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-08T16:34:40.95Z",
+              "DocumentIndex": 3,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Controllers\\UserController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-15T22:13:35.199Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Game.cs",
-              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Models\\Game.cs",
-              "RelativeDocumentMoniker": "Models\\Game.cs",
-              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Models\\Game.cs",
-              "RelativeToolTip": "Models\\Game.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAywAsAAAAtAAAA",
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T15:55:38.706Z"
+              "WhenOpened": "2024-03-15T22:13:23.059Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T16:25:23.667Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameController.cs",
-              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Controllers\\GameController.cs",
-              "RelativeDocumentMoniker": "Controllers\\GameController.cs",
-              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Controllers\\GameController.cs",
-              "RelativeToolTip": "Controllers\\GameController.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAAxwA0AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T16:26:12.486Z"
+              "DocumentIndex": 4,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "Views\\User\\Login.cshtml",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Views\\User\\Login.cshtml",
+              "RelativeToolTip": "Views\\User\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-03-15T22:13:16.59Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -109,21 +96,23 @@
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA6AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-03-08T16:14:18.016Z"
+              "WhenOpened": "2024-03-15T21:21:19.909Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Models\\User.cs",
-              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Models\\User.cs",
-              "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAA1wB0AAAA8AAAA",
+              "DocumentIndex": 0,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "Models\\Admin.cs",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\FIAP\\2ANO\\.NET\\cp1\\PlayWithoutPay\\Models\\Admin.cs",
+              "RelativeToolTip": "Models\\Admin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-08T15:44:50.927Z"
+              "WhenOpened": "2024-03-15T21:28:17.989Z",
+              "EditorCaption": ""
             }
           ]
         }

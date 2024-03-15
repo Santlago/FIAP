@@ -1,0 +1,23 @@
+﻿@model PlayWithoutPay.Models.User
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@using (Html.BeginForm("Login", "User", FormMethod.Post))
+{
+
+    <div>
+        <label for="Login">Login:</label>
+        @Html.TextBoxFor(model => model.Login)
+    </div>
+
+    <div>
+        <label for="Password">Password:</label>
+        @Html.PasswordFor(model => model.Password)
+    </div>
+
+    <button type="submit">Submit</button>
+}
