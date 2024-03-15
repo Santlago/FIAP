@@ -4,4 +4,6 @@
 
 <h1>Profile</h1>
 
-@Html.ActionLink("Login", "Login", "User")
+<form asp-controller="User" asp-action="Login" method="get">
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
