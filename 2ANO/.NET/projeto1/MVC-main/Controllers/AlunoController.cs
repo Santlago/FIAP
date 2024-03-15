@@ -10,11 +10,18 @@ namespace _2TDSPK.Controllers
             Aluno aluno = new("Thiago", "thiago@keller.com");
             //aluno.Logar();
 
+            Dictionary<string, int> configuracoes = new Dictionary<string, int>();
+            configuracoes.Add("senha", 123456);
+
             return View(aluno);
         }
 
         public IActionResult ListaAlunos()
         {
+
+            int[] idade = new int[4];
+            idade[1] = 38;
+
             List<Aluno> listaAluno = new List<Aluno>();
 
             Aluno aluno = new("Thiago", "thiago@keller.com");
@@ -24,6 +31,8 @@ namespace _2TDSPK.Controllers
             listaAluno.Add(aluno);
             listaAluno.Add(aluno2);
             listaAluno.Add(aluno3);
+
+            var novoAluno2 = listaAluno.Where(x => x.GetNome() == "Enzo");
 
             return View(listaAluno);
         }
