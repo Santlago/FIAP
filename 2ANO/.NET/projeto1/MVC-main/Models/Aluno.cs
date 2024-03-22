@@ -1,11 +1,12 @@
 ﻿
 
+using _2TDSPK.Validacoes;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace _2TDSPK.Models
 {
-    [Table("TB_ALUNOS_PK")]
+    [Table("TB_ALUNOS", Schema ="2TDSPK")]
     public class Aluno : Usuario
     {
         public Aluno(string nome, string email, int rm = 0) : base(nome, email)
@@ -21,7 +22,8 @@ namespace _2TDSPK.Models
         }
 
         [Key]
-        [Required]
+        [Column("Identificacao")]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] /*AutoIncrement*/
         public int Id { get; set; }
 
         //DDL
@@ -30,16 +32,17 @@ namespace _2TDSPK.Models
         //        Rm int NOT NULL
         //    )
 
-        [Required()]
-        [MinLength(4)]
-        [MaxLength(8)]
+        [CPFValidacao]
         private int RM { get; set; }
 
-
+        
         public int Idade()
         {
             return DateTime.Now.Year - DataNascimento.Year;
         }
+
+        [ForeignKey("")]
+        public  int Curso { get; set; }
 
         internal void AprovaAluno()
         {

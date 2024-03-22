@@ -1,12 +1,38 @@
 ﻿using _2TDSPK.Models;
+using _2TDSPK.Persistencia;
 using Microsoft.AspNetCore.Mvc;
 
 namespace _2TDSPK.Controllers
 {
     public class AlunoController : Controller
     {
+        private OracleDbContext _db;
+
+        public AlunoController()
+        {
+            _db = new OracleDbContext(/*string conexao*/);
+        }
+
+        public void TesteConexao()
+        {
+           
+
+            _db.Alunos.Where(x => x.GetNome() == "Arthur"); /*LINQ*/
+            //select * from TB_ALUNOS a where a.nome = "Arthur";
+
+            _db.Alunos.Where(x => x.Id == 1); /*LINQ*/
+
+
+            //select * from TB_ALUNOS a where a.Identificacao = 1;
+            _db.Professores.Add(new Professor("Thiago", "keller"));
+            //insert into professor values('Thiago', 'keller')
+        }
+
+
         public IActionResult Index()
         {
+            OracleDbContext db = new OracleDbContext();
+
             Aluno aluno = new("Thiago", "thiago@keller.com");
 
             Dictionary<string, int> configuracoes = new Dictionary<string, int>();
@@ -94,6 +120,7 @@ namespace _2TDSPK.Controllers
 
         public void EnviarEmail(List<Aluno> listaAluno)
         {
+
             var conexaoServidorEmail = true;
 
             foreach (var aluno in listaAluno)

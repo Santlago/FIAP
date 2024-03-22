@@ -1,3 +1,6 @@
+using _2TDSPK.Persistencia;
+using Microsoft.EntityFrameworkCore;
+
 namespace _2TDSPK
 {
     public class Program
@@ -8,6 +11,13 @@ namespace _2TDSPK
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<OracleDbContext>(
+                options =>
+                {
+                    options.UseOracle(builder.Configuration.GetConnectionString("OracleConnection"));
+                }
+            );
 
             var app = builder.Build();
 

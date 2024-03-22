@@ -1,4 +1,7 @@
-﻿namespace _2TDSPK.Models
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace _2TDSPK.Models
 {
     public class Usuario : Auditoria, IUsuario
     {
@@ -13,11 +16,14 @@
         private string Nome { get; set; }
 
         protected DateTime DataNascimento { get; set; }
-        
+
+        [EmailAddress(ErrorMessage ="Erro no email")]
         public string Email { get; set; }
 
+        [MinLength(8,ErrorMessage ="A quantidade de caracteres minina é 8")]
         public string Senha { get; set; }
 
+        [NotMapped]
         public List<Endereco> Endereco { get; set; }
 
         public string GetNome()
