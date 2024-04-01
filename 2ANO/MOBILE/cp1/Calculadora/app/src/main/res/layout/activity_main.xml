@@ -188,7 +188,7 @@
                 />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/substracao"
+                android:id="@+id/subtracao"
                 android:text="-"
                 android:background="@color/laranja"
                 android:textColor="@color/white"

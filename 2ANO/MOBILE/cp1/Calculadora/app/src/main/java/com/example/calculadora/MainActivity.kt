@@ -1,224 +1,121 @@
- package com.example.calculadora
+//    Breno Lemes Santiago RM: 552270
+//    Felipe Guedes Gonçalves RM: 550906
+//    Luiz Fellipe Soares de Sousa Lucena RM: 551365
+//    Nina Rebello Francisco RM: 99509
+//    Vitória Maria de Camargo RM: 552344
 
- import android.os.Bundle
- import android.widget.Button
- import android.widget.TextView
- import androidx.appcompat.app.AppCompatActivity
- import kotlin.math.absoluteValue
+package com.example.calculadora
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
+import com.example.calculadora.databinding.ActivityMainBinding
+import org.mariuszgromada.math.mxparser.Expression
 
  class MainActivity : AppCompatActivity() {
+     private lateinit var binding: ActivityMainBinding
 
-     private lateinit var calculoTextView: TextView
-     private lateinit var resultadoTextView: TextView
-     private var numerosDigitados = ""
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-     override fun onCreate(savedInstanceState: Bundle?) {
-         super.onCreate(savedInstanceState)
-         setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-         calculoTextView = findViewById(R.id.calculo)
-         resultadoTextView = findViewById(R.id.resultado)
+        val calculo = binding.calculo
 
-         // Definir listeners de clique para os botões numéricos
-         val numeros = listOf(
-             findViewById<Button>(R.id.um),
-             findViewById<Button>(R.id.dois),
-             findViewById<Button>(R.id.tres),
-             findViewById<Button>(R.id.quatro),
-             findViewById<Button>(R.id.cinco),
-             findViewById<Button>(R.id.seis),
-             findViewById<Button>(R.id.sete),
-             findViewById<Button>(R.id.oito),
-             findViewById<Button>(R.id.nove),
-             findViewById<Button>(R.id.zero)
-         )
+        binding.um.setOnClickListener {
+            calculo.text = "${calculo.text}1"
+        }
 
-         numeros.forEach { button ->
-             button.setOnClickListener {
-                 adicionarNumero(button.text.toString())
-             }
-         }
+        binding.dois.setOnClickListener {
+            calculo.text = "${calculo.text}2"
+        }
 
-         // Definir listeners de clique para os botões de operadores
-         val operadores = listOf(
-             findViewById<Button>(R.id.adicao),
-             findViewById<Button>(R.id.substracao),
-             findViewById<Button>(R.id.multiplicacao),
-             findViewById<Button>(R.id.divisao)
-         )
+        binding.tres.setOnClickListener {
+            calculo.text = "${calculo.text}3"
+        }
 
-         operadores.forEach { button ->
-             button.setOnClickListener {
-                 adicionarOperador(button.text.toString())
-             }
-         }
+        binding.quatro.setOnClickListener {
+            calculo.text = "${calculo.text}4"
+        }
 
-         // Definir listener de clique para o botão CE (limpar)
-         findViewById<Button>(R.id.ce).setOnClickListener {
-             limparExpressao()
-         }
+        binding.cinco.setOnClickListener {
+            calculo.text = "${calculo.text}5"
+        }
 
-         // Definir listener de clique para o botão igual
-         findViewById<Button>(R.id.igual).setOnClickListener {
-             calcularResultado()
-         }
+        binding.seis.setOnClickListener {
+            calculo.text = "${calculo.text}6"
+        }
 
-         // Definir listener de clique para o botão de sinal positivo/negativo
-         findViewById<Button>(R.id.sinal).setOnClickListener {
-             inverterSinal()
-         }
+        binding.sete.setOnClickListener {
+            calculo.text = "${calculo.text}7"
+        }
 
-         // Definir listener de clique para o botão de porcentagem
-         findViewById<Button>(R.id.porcentagem).setOnClickListener {
-             calcularPorcentagem()
-         }
+        binding.oito.setOnClickListener {
+            calculo.text = "${calculo.text}8"
+        }
 
-         // Definir listener de clique para o botão de vírgula
-         findViewById<Button>(R.id.virgula).setOnClickListener {
-             adicionarVirgula()
-         }
-     }
-
-     private fun adicionarNumero(numero: String) {
-         numerosDigitados += numero
-         calculoTextView.text = numerosDigitados
-     }
-
-     private fun adicionarOperador(operador: String) {
-         if (numerosDigitados.isNotEmpty()) {
-             numerosDigitados += operador
-             calculoTextView.text = numerosDigitados
-         }
-     }
-
-     private fun limparExpressao() {
-         numerosDigitados = ""
-         calculoTextView.text = ""
-         resultadoTextView.text = ""
-     }
-
-     private fun calcularResultado() {
-         try {
-             val resultado = avaliarExpressao(numerosDigitados)
-             resultadoTextView.text = resultado.toString()
-         } catch (e: Exception) {
-             resultadoTextView.text = "Erro"
-         }
-     }
-
-     private fun inverterSinal() {
-         if (numerosDigitados.isNotEmpty() && numerosDigitados.first() != '-') {
-             numerosDigitados = "-$numerosDigitados"
-         } else if (numerosDigitados.isNotEmpty() && numerosDigitados.first() == '-') {
-             numerosDigitados = numerosDigitados.substring(1)
-         }
-         calculoTextView.text = numerosDigitados
-     }
-
-     private fun calcularPorcentagem() {
-         if (numerosDigitados.isNotEmpty()) {
-             val numero = numerosDigitados.toDouble()
-             val porcentagem = numero / 100.0
-             numerosDigitados = porcentagem.toString()
-             calculoTextView.text = numerosDigitados
-         }
-     }
-
-     private fun adicionarVirgula() {
-         if (!numerosDigitados.contains(".")) {
-             numerosDigitados += "."
-             calculoTextView.text = numerosDigitados
-         }
-     }
-
-     private fun avaliarExpressao(expressao: String): Double {
-         val numeros = mutableListOf<Double>()
-         val operadores = mutableListOf<Char>()
-         var numero = StringBuilder()
-
-         for (caractere in expressao) {
-             if (caractere in '0'..'9' || caractere == '.') {
-                 numero.append(caractere)
-             } else {
-                 if (numero.isNotEmpty()) {
-                     numeros.add(numero.toString().toDouble())
-                     numero = StringBuilder()
-                 }
-                 operadores.add(caractere)
-             }
-         }
-         if (numero.isNotEmpty()) {
-             numeros.add(numero.toString().toDouble())
-         }
-
-         calcularMultiplicacaoEDivisao(numeros, operadores)
-         calcularSomaESubtracao(numeros, operadores)
-
-         return numeros.first()
-     }
+        binding.nove.setOnClickListener {
+            calculo.text = "${calculo.text}9"
+        }
 
 
-     private fun calcularMultiplicacaoEDivisao(numeros: MutableList<Double>, operadores: MutableList<Char>) {
-         calcularMultiplicacao(numeros, operadores)
-         calcularDivisao(numeros, operadores)
-     }
+        binding.divisao.setOnClickListener {
+            calculo.text = "${calculo.text}/"
+        }
 
-     private fun calcularMultiplicacao(numeros: MutableList<Double>, operadores: MutableList<Char>) {
-         var indice = 0
-         while (indice < operadores.size) {
-             val op = operadores[indice]
-             if (op == '*') {
-                 val numero1 = numeros[indice]
-                 val numero2 = numeros[indice + 1]
-                 val resultado = numero1 * numero2
-                 // Substituir o primeiro número pelo resultado da multiplicação
-                 numeros[indice] = resultado
-                 // Remover o operador após a multiplicação
-                 operadores.removeAt(indice)
-             } else {
-                 indice++
-             }
-         }
-     }
+        binding.multiplicacao.setOnClickListener {
+            calculo.text = "${calculo.text}*"
+        }
 
+        binding.subtracao.setOnClickListener {
+            calculo.text = "${calculo.text}-"
+        }
 
+        binding.adicao.setOnClickListener {
+            calculo.text = "${calculo.text}+"
+        }
 
-     private fun calcularDivisao(numeros: MutableList<Double>, operadores: MutableList<Char>) {
-         var indice = 0
-         while (indice < operadores.size) {
-             val op = operadores[indice]
-             if (op == '/') {
-                 val numero1 = numeros[indice]
-                 val numero2 = numeros[indice + 1]
-                 val resultado = numero1 / numero2
-                 // Substituir o primeiro número pelo resultado
-                 numeros[indice] = resultado
-                 // Remover o operador e o segundo número
-                 operadores.removeAt(indice)
-                 numeros.removeAt(indice + 1)
-             } else {
-                 indice++
-             }
-         }
-     }
+        binding.virgula.setOnClickListener {
+            calculo.text = "${calculo.text}."
+        }
 
+        binding.zero.setOnClickListener {
+            calculo.text = "${calculo.text}0"
+        }
 
+        binding.ce.setOnClickListener {
+            calculo.text = ""
+            binding.resultado.text = ""
+        }
 
-     private fun calcularSomaESubtracao(numeros: MutableList<Double>, operadores: MutableList<Char>) {
-         var i = 0
-         while (i < operadores.size) {
-             if (operadores[i] == '+' || operadores[i] == '-') {
-                 val operador = operadores[i]
-                 val num1 = numeros[i]
-                 val num2 = numeros[i + 1]
-                 val resultado = if (operador == '+') num1 + num2 else num1 - num2
-                 numeros[i] = resultado
-                 numeros.removeAt(i + 1)
-                 operadores.removeAt(i)
-             } else {
-                 i++
-             }
-         }
-     }
+        binding.porcentagem.setOnClickListener {
+            calculo.text = "${calculo.text}%"
+        }
 
- }
+        binding.igual.setOnClickListener {
+            val resultadoCalculado = Expression(calculo.text.toString()).calculate()
+
+            if(resultadoCalculado.isNaN()){
+                binding.resultado.text = "Erro"
+            } else {
+                binding.resultado.text = resultadoCalculado.toString()
+            }
+
+        }
+
+        binding.sinal.setOnClickListener {
+            val expressao = calculo.text.toString()
+            if (expressao.isNotEmpty()) {
+                calculo.text = if (expressao[0] == '-') {
+                    expressao.substring(1)
+                } else {
+                    "-$expressao"
+                }
+            }
+        }
+
+    }
+}
