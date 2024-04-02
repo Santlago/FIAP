@@ -1,0 +1,2 @@
+-- 10.	Liste os sobrenomes em maiúsculas dos funcionários do departamento 50, agrupados por sobrenome e em ordem crescente de salário-mínimo.
+SELECT MIN(SALARY) AS SALARIO_MINIMO, UPPER(LAST_NAME) AS SOBRENOME FROM EMPLOYEES WHERE department_id = 50 GROUP BY LAST_NAME ORDER BY SALARIO_MINIMO ASC;

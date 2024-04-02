@@ -1,0 +1,2 @@
+-- 5.	Conte o número de funcionários em cada departamento, mostrando os departamentos com mais funcionários primeiro.
+SELECT COUNT(*) AS NUM_FUNCIONARIOS FROM EMPLOYEES GROUP BY department_id ORDER BY NUM_FUNCIONARIOS DESC;

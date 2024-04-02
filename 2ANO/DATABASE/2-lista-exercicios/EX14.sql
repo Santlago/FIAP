@@ -1,0 +1,2 @@
+-- 14.	Mostre os nomes completos e as datas de contratação dos funcionários do departamento 20, em ordem cronológica.
+SELECT FIRST_NAME || ' ' || LAST_NAME AS NOME_COMPLETO, HIRE_DATE AS DATA_CONTRATACAO FROM EMPLOYEES WHERE DEPARTMENT_ID = 20 ORDER BY DATA_CONTRATACAO ASC;

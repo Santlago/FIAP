@@ -1,0 +1,2 @@
+-- 12.	Calcule o total dos salários dos funcionários do departamento 60, agrupados pelo cargo capitalizado(Primeira letra maiuscula), mostrando os cargos com os maiores totais salariais primeiro.
+SELECT INITCAP(JOB_ID) AS CARGO, SUM(SALARY) AS TOTAL_SALARIO FROM EMPLOYEES WHERE DEPARTMENT_ID = 60 GROUP BY JOB_ID ORDER BY TOTAL_SALARIO DESC;

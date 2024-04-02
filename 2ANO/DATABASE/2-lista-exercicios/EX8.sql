@@ -1,0 +1,2 @@
+-- 8.	Mostre as datas de contratação dos gerentes de vendas ('SA_MAN') em cada departamento, formatadas como 'YYYY-MM-DD', em ordem cronológica.
+SELECT DEPARTMENT_ID, TO_CHAR(HIRE_DATE, 'YYYY-MM-DD') FROM EMPLOYEES WHERE JOB_ID = 'SA_MAN';

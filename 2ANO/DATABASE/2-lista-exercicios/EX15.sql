@@ -1,0 +1,2 @@
+-- 15.	Calcule a média dos salários dos funcionários em cada departamento, mostrando as médias salariais formatadas em dólares, com os departamentos com as maiores médias salariais primeiro.
+SELECT DEPARTMENT_ID AS DEPARTAMENTO, CONCAT('$', AVG(SALARY)) MEDIA_SALARIO FROM EMPLOYEES GROUP BY DEPARTMENT_ID ORDER BY AVG(SALARY) DESC;

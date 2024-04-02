@@ -1,0 +1,2 @@
+-- 6.	Liste os salários máximos dos funcionários do departamento 90, agrupados pelos três primeiros caracteres do cargo, em ordem decrescente de salário máximo.
+SELECT SUBSTR(JOB_ID, 1, 3) AS CARGO, MAX(SALARY) AS SALARIO_MAXIMO FROM EMPLOYEES WHERE DEPARTMENT_ID = 90 GROUP BY JOB_ID ORDER BY MAX(SALARY) DESC;

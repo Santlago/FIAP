@@ -1,0 +1,2 @@
+-- 13.	Liste os IDs de funcionários do departamento 30, preenchidos com zeros à esquerda, em ordem crescente de comissão.
+SELECT COMMISSION_PCT AS COMISSAO, LPAD(EMPLOYEE_ID, 4, 0) FROM EMPLOYEES WHERE department_id = 30 ORDER BY COMMISSION_PCT ASC;

@@ -1,0 +1,2 @@
+-- 1.	Liste os salários dos funcionários do departamento 30, arredondados para duas casas decimais, em ordem decrescente de salário.
+SELECT ROUND(SALARY, 2) FROM EMPLOYEES WHERE DEPARTMENT_ID = 30 ORDER BY SALARY DESC;
