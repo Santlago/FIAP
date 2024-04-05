@@ -15,6 +15,7 @@ namespace _2TDSPK
             builder.Services.AddDbContext<OracleDbContext>(
                 options =>
                 {
+                    
                     options.UseOracle(builder.Configuration.GetConnectionString("OracleConnection"));
                 }
             );

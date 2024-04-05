@@ -10,7 +10,7 @@ namespace _2TDSPK.Controllers
 
         public AlunoController()
         {
-            _db = new OracleDbContext(/*string conexao*/);
+            //_db = new OracleDbContext(/*string conexao*/);
         }
 
         public void TesteConexao()
@@ -31,7 +31,7 @@ namespace _2TDSPK.Controllers
 
         public IActionResult Index()
         {
-            OracleDbContext db = new OracleDbContext();
+            //OracleDbContext db = new OracleDbContext();
 
             Aluno aluno = new("Thiago", "thiago@keller.com");
 
