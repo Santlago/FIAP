@@ -8,9 +8,37 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20240405135701_Inicio.cs" />
+    <Compile Remove="Migrations\20240405135701_Inicio.Designer.cs" />
+    <Compile Remove="Migrations\20240405140907_vCursos.cs" />
+    <Compile Remove="Migrations\20240405140907_vCursos.Designer.cs" />
+    <Compile Remove="Migrations\20240405141128_v1Cursos.cs" />
+    <Compile Remove="Migrations\20240405141128_v1Cursos.Designer.cs" />
+    <Compile Remove="Migrations\20240405141530_vAuditoria.cs" />
+    <Compile Remove="Migrations\20240405141530_vAuditoria.Designer.cs" />
+    <Compile Remove="Migrations\20240405142433_vMaterias.cs" />
+    <Compile Remove="Migrations\20240405142433_vMaterias.Designer.cs" />
+    <Compile Remove="Migrations\OracleDbContextModelSnapshot.cs" />
+    <Compile Remove="Persistencia\Models\TEste.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.2" />
     <PackageReference Include="Oracle.EntityFrameworkCore" Version="8.21.121" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
   </ItemGroup>
 
 </Project>

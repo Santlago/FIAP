@@ -1,0 +1,52 @@
+﻿@model _2TDSPK.Persistencia.Models.Curso
+
+@{
+    ViewData["Title"] = "Details" + @Html.DisplayFor(model => model.Nome);
+}
+
+<h1>@Html.DisplayFor(model => model.Nome)</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Status)
+        </dd>        
+    </dl>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayName("Nome")
+                </th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Turmas)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>                    
+                </tr>
+            }
+        </tbody>
+     </table>
+
+
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.CursoId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

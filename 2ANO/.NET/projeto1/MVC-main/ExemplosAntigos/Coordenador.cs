@@ -1,4 +1,4 @@
-﻿namespace _2TDSPK.Models
+﻿namespace _2TDSPK.ExemplosAntigos
 {
     public class Coordenador : Usuario
     {

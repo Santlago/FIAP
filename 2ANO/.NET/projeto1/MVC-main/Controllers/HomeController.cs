@@ -1,3 +1,4 @@
+using _2TDSPK.ExemplosAntigos;
 using _2TDSPK.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
@@ -15,11 +16,6 @@ namespace _2TDSPK.Controllers
 
         public IActionResult Index()
         {
-
-
-            Professor professor = new Professor("Thiago", "teste");
-            //professor.Logar();
-
             return View();
         }
 

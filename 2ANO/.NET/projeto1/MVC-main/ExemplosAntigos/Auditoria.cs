@@ -1,12 +1,12 @@
-﻿namespace _2TDSPK.Models
+﻿namespace _2TDSPK.ExemplosAntigos
 {
     public class Auditoria
     {
-        public bool Status { get; set; }
         public string UsuarioCriacao { get; set; }
         public DateTime DataCriacao { get; set; }
 
         public string UsuarioAlteracao { get; set; }
         public DateTime DataAlteracao { get; set; }
+
     }
 }

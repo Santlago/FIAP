@@ -1,12 +1,10 @@
-﻿
-
-using _2TDSPK.Validacoes;
+﻿using _2TDSPK.Validacoes;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace _2TDSPK.Models
+namespace _2TDSPK.ExemplosAntigos
 {
-    [Table("TB_ALUNOS", Schema ="2TDSPK")]
+    [Table("TB_ALUNOS", Schema = "2TDSPK")]
     public class Aluno : Usuario
     {
         public Aluno(string nome, string email, int rm = 0) : base(nome, email)
@@ -15,7 +13,8 @@ namespace _2TDSPK.Models
             {
                 Random random = new Random();
                 RM = random.Next(1, 10000);
-            } else
+            }
+            else
             {
                 RM = rm;
             }
@@ -35,14 +34,14 @@ namespace _2TDSPK.Models
         [CPFValidacao]
         private int RM { get; set; }
 
-        
+
         public int Idade()
         {
             return DateTime.Now.Year - DataNascimento.Year;
         }
 
         [ForeignKey("")]
-        public  int Curso { get; set; }
+        public int Curso { get; set; }
 
         internal void AprovaAluno()
         {

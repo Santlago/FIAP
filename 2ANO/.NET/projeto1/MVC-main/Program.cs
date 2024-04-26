@@ -9,16 +9,19 @@ namespace _2TDSPK
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            // Add services to the container(caixa) de injeção de dependencia
             builder.Services.AddControllersWithViews();
 
-            builder.Services.AddDbContext<OracleDbContext>(
+            builder.Services.AddDbContext<FIAPDbContext>(
                 options =>
-                {
-                    
+                {                    
                     options.UseOracle(builder.Configuration.GetConnectionString("OracleConnection"));
                 }
             );
+
+            //builder.Services.AddSingleton - o garcom pega dentro da caixa e entrega direto para o Arhut
+            //builder.Services.AddScoped - o gracom pega na caixa assa novamente e entrega
+            //builder.Services.AddTransient - o churrasqueiro coloca a carne na churrasqueira
 
             var app = builder.Build();
 

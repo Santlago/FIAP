@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace _2TDSPK.Models
+namespace _2TDSPK.ExemplosAntigos
 {
     public class Usuario : Auditoria, IUsuario
     {
@@ -17,23 +17,23 @@ namespace _2TDSPK.Models
 
         protected DateTime DataNascimento { get; set; }
 
-        [EmailAddress(ErrorMessage ="Erro no email")]
+        [EmailAddress(ErrorMessage = "Erro no email")]
         public string Email { get; set; }
 
-        [MinLength(8,ErrorMessage ="A quantidade de caracteres minina é 8")]
+        [MinLength(8, ErrorMessage = "A quantidade de caracteres minina é 8")]
         public string Senha { get; set; }
 
         [NotMapped]
         public List<Endereco> Endereco { get; set; }
 
         public string GetNome()
-        { 
+        {
             return Nome;
         }
 
         public virtual void Logar()
         {
-           
+
             //Verificar se existe o usuario baseado no email
             //Se o usuario existir verifica a senha
             //se a senha estiver correta,

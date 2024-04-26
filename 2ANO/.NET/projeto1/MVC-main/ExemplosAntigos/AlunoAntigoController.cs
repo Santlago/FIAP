@@ -2,29 +2,29 @@
 using _2TDSPK.Persistencia;
 using Microsoft.AspNetCore.Mvc;
 
-namespace _2TDSPK.Controllers
+namespace _2TDSPK.ExemplosAntigos
 {
-    public class AlunoController : Controller
+    public class AlunoAntigoController : Controller
     {
-        private OracleDbContext _db;
+        private FIAPDbContext _db;
 
-        public AlunoController()
+        public AlunoAntigoController()
         {
             //_db = new OracleDbContext(/*string conexao*/);
         }
 
         public void TesteConexao()
         {
-           
 
-            _db.Alunos.Where(x => x.GetNome() == "Arthur"); /*LINQ*/
+
+            //_db.Alunos.Where(x => x.GetNome() == "Arthur"); /*LINQ*/
             //select * from TB_ALUNOS a where a.nome = "Arthur";
 
-            _db.Alunos.Where(x => x.Id == 1); /*LINQ*/
+            _db.Alunos.Where(x => x.AlunoId == 1); /*LINQ*/
 
 
-            //select * from TB_ALUNOS a where a.Identificacao = 1;
-            _db.Professores.Add(new Professor("Thiago", "keller"));
+            ////select * from TB_ALUNOS a where a.Identificacao = 1;
+            //_db.Professores.Add(new Professor("Thiago", "keller"));
             //insert into professor values('Thiago', 'keller')
         }
 
@@ -55,7 +55,7 @@ namespace _2TDSPK.Controllers
 
             int proximoItem = queueInt.Dequeue(); /*resultado 1*/
             int proximoItem2 = queueInt.Dequeue(); /*resultado 2*/
-            
+
             queueInt.Enqueue(4);
 
             int proximoItem3 = queueInt.Dequeue(); /*resultado 3*/
@@ -104,14 +104,14 @@ namespace _2TDSPK.Controllers
 
             for (int i = 0; i < listaAluno.Count(); i++)
             {
-                if (listaAluno[i].GetNome()== "Enzo" & listaAluno[i].Email == "Enzo")
+                if (listaAluno[i].GetNome() == "Enzo" & listaAluno[i].Email == "Enzo")
                 {
                     novoAluno = listaAluno[i];
                 }
             }
 
             Aluno novoAluno2 = listaAluno.Where(x => x.GetNome() == "Enzo" && x.Email == "enzo@teste.com").Single();
-       
+
 
             //select top(1) from alunos where alunos.nome="enzo" and alunos.email="enzo@"
 
