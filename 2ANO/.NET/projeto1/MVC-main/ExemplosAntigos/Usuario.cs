@@ -46,5 +46,10 @@ namespace _2TDSPK.ExemplosAntigos
             //apagar o token
             throw new NotImplementedException();
         }
+
+        public void VerificarNome(string nome)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
