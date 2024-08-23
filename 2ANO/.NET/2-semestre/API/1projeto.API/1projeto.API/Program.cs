@@ -1,4 +1,7 @@
 
+using _2TDSPK.Database;
+using Microsoft.EntityFrameworkCore;
+
 namespace _1projeto.API
 {
     public class Program
@@ -14,7 +17,13 @@ namespace _1projeto.API
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddDbContext<FIAPDBContext>(options =>
+            {
+                options.UseOracle(builder.Configuration.GetConnectionString("FIAPDatabase"));
+            });
+            
             var app = builder.Build();
+
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

@@ -1,0 +1,12 @@
+C:\Users\Breno\gitClones\FIAP\2ANO\.NET\2-semestre\API\1projeto.API\2TDSPK.Database\bin\Debug\net8.0\1projeto.Database.deps.json
+C:\Users\Breno\gitClones\FIAP\2ANO\.NET\2-semestre\API\1projeto.API\2TDSPK.Database\bin\Debug\net8.0\1projeto.Database.dll
+C:\Users\Breno\gitClones\FIAP\2ANO\.NET\2-semestre\API\1projeto.API\2TDSPK.Database\bin\Debug\net8.0\1projeto.Database.pdb
+C:\Users\Breno\gitClones\FIAP\2ANO\.NET\2-semestre\API\1projeto.API\2TDSPK.Database\obj\Debug\net8.0\1projeto.Database.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Breno\gitClones\FIAP\2ANO\.NET\2-semestre\API\1projeto.API\2TDSPK.Database\obj\Debug\net8.0\1projeto.Database.AssemblyInfoInputs.cache
+C:\Users\Breno\gitClones\FIAP\2ANO\.NET\2-semestre\API\1projeto.API\2TDSPK.Database\obj\Debug\net8.0\1projeto.Database.AssemblyInfo.cs
+C:\Users\Breno\gitClones\FIAP\2ANO\.NET\2-semestre\API\1projeto.API\2TDSPK.Database\obj\Debug\net8.0\1projeto.Database.csproj.CoreCompileInputs.cache
+C:\Users\Breno\gitClones\FIAP\2ANO\.NET\2-semestre\API\1projeto.API\2TDSPK.Database\obj\Debug\net8.0\1projeto.Database.sourcelink.json
+C:\Users\Breno\gitClones\FIAP\2ANO\.NET\2-semestre\API\1projeto.API\2TDSPK.Database\obj\Debug\net8.0\1projeto.Database.dll
+C:\Users\Breno\gitClones\FIAP\2ANO\.NET\2-semestre\API\1projeto.API\2TDSPK.Database\obj\Debug\net8.0\refint\1projeto.Database.dll
+C:\Users\Breno\gitClones\FIAP\2ANO\.NET\2-semestre\API\1projeto.API\2TDSPK.Database\obj\Debug\net8.0\1projeto.Database.pdb
+C:\Users\Breno\gitClones\FIAP\2ANO\.NET\2-semestre\API\1projeto.API\2TDSPK.Database\obj\Debug\net8.0\ref\1projeto.Database.dll
