@@ -1,4 +1,5 @@
 ﻿using _2TDSPK.Database;
+using _2TDSPK.Repository.Interface;
 using Microsoft.EntityFrameworkCore;
 
 namespace _2TDSPK.Repository

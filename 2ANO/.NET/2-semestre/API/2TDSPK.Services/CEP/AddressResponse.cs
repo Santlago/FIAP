@@ -2,6 +2,7 @@
 
 namespace _2TDSPK.Services.CEP
 {
+    
     public class AddressResponse
     {
         [JsonProperty("cep")]

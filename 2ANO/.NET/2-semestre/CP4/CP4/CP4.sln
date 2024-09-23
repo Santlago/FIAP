@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34607.119
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CP4.API", "CP4\CP4.API.csproj", "{733B9042-63CD-4B17-B137-620DDD610449}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F3D5D26B-7B09-4DDB-8266-A26971955966}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EB1C106B-6CDD-4243-9C06-7B70BB1FF715}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service.Test", "Service.Test\Service.Test.csproj", "{BD849BAD-1B7F-427E-8485-CDBDE6EB6EF3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{733B9042-63CD-4B17-B137-620DDD610449}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{733B9042-63CD-4B17-B137-620DDD610449}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{733B9042-63CD-4B17-B137-620DDD610449}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{733B9042-63CD-4B17-B137-620DDD610449}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD849BAD-1B7F-427E-8485-CDBDE6EB6EF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD849BAD-1B7F-427E-8485-CDBDE6EB6EF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD849BAD-1B7F-427E-8485-CDBDE6EB6EF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD849BAD-1B7F-427E-8485-CDBDE6EB6EF3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{733B9042-63CD-4B17-B137-620DDD610449} = {F3D5D26B-7B09-4DDB-8266-A26971955966}
+		{BD849BAD-1B7F-427E-8485-CDBDE6EB6EF3} = {EB1C106B-6CDD-4243-9C06-7B70BB1FF715}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {075FDE66-2178-4444-9B95-F0BB13351C21}
+	EndGlobalSection
+EndGlobal

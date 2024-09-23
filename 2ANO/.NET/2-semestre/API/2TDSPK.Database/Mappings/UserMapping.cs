@@ -8,14 +8,19 @@ namespace _2TDSPK.Database.Mappings
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.ToTable("2TDSPK_USERS");
+            builder
+                .ToTable("2TDSPK_USERS");
 
-            builder.HasKey(x => x.Id);
+            builder
+                .HasKey(x => x.Id);
 
-            builder.Property(x => x.Email)
-                .HasMaxLength(128);
+            builder
+                .Property(x => x.Email)
+                .HasMaxLength(128)
+                .IsRequired();
 
-            builder.Property(x => x.Password)
+            builder
+                .Property(x => x.Password)
                 .HasMaxLength(8)
                 .IsRequired();                
         }

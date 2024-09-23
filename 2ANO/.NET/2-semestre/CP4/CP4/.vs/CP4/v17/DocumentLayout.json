@@ -1,0 +1,207 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|c:\\users\\breno\\gitclones\\fiap\\2ano\\.net\\2-semestre\\cp4\\cp4\\cp4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|solutionrelative:cp4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|c:\\users\\breno\\gitclones\\fiap\\2ano\\.net\\2-semestre\\cp4\\cp4\\cp4\\controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|solutionrelative:cp4\\controllers\\countriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|c:\\users\\breno\\gitclones\\fiap\\2ano\\.net\\2-semestre\\cp4\\cp4\\cp4\\countryservices\\icountryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|solutionrelative:cp4\\countryservices\\icountryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|c:\\users\\breno\\gitclones\\fiap\\2ano\\.net\\2-semestre\\cp4\\cp4\\cp4\\countryservices\\countryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|solutionrelative:cp4\\countryservices\\countryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BD849BAD-1B7F-427E-8485-CDBDE6EB6EF3}|Service.Test\\Service.Test.csproj|c:\\users\\breno\\gitclones\\fiap\\2ano\\.net\\2-semestre\\cp4\\cp4\\service.test\\countryservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BD849BAD-1B7F-427E-8485-CDBDE6EB6EF3}|Service.Test\\Service.Test.csproj|solutionrelative:service.test\\countryservicetest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|c:\\users\\breno\\gitclones\\fiap\\2ano\\.net\\2-semestre\\cp4\\cp4\\cp4\\countryservices\\responses\\flagsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|solutionrelative:cp4\\countryservices\\responses\\flagsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|c:\\users\\breno\\gitclones\\fiap\\2ano\\.net\\2-semestre\\cp4\\cp4\\cp4\\countryservices\\responses\\countriesresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|solutionrelative:cp4\\countryservices\\responses\\countriesresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|c:\\users\\breno\\gitclones\\fiap\\2ano\\.net\\2-semestre\\cp4\\cp4\\cp4\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|solutionrelative:cp4\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|c:\\users\\breno\\gitclones\\fiap\\2ano\\.net\\2-semestre\\cp4\\cp4\\cp4\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|solutionrelative:cp4\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|c:\\users\\breno\\gitclones\\fiap\\2ano\\.net\\2-semestre\\cp4\\cp4\\cp4\\countryservices\\responses\\nameresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|solutionrelative:cp4\\countryservices\\responses\\nameresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|c:\\users\\breno\\gitclones\\fiap\\2ano\\.net\\2-semestre\\cp4\\cp4\\cp4\\cp4.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{733B9042-63CD-4B17-B137-620DDD610449}|CP4\\CP4.API.csproj|solutionrelative:cp4\\cp4.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CountryServiceTest.cs",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\Service.Test\\CountryServiceTest.cs",
+              "RelativeDocumentMoniker": "Service.Test\\CountryServiceTest.cs",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\Service.Test\\CountryServiceTest.cs",
+              "RelativeToolTip": "Service.Test\\CountryServiceTest.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAB4AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T15:07:04.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ICountryService.cs",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\CountryServices\\ICountryService.cs",
+              "RelativeDocumentMoniker": "CP4\\CountryServices\\ICountryService.cs",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\CountryServices\\ICountryService.cs",
+              "RelativeToolTip": "CP4\\CountryServices\\ICountryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:58:50.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\Program.cs",
+              "RelativeDocumentMoniker": "CP4\\Program.cs",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\Program.cs",
+              "RelativeToolTip": "CP4\\Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAA1wCQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:49:32.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CountriesController.cs",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\Controllers\\CountriesController.cs",
+              "RelativeDocumentMoniker": "CP4\\Controllers\\CountriesController.cs",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\Controllers\\CountriesController.cs",
+              "RelativeToolTip": "CP4\\Controllers\\CountriesController.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAowAsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:44:20.899Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CountryService.cs",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\CountryServices\\CountryService.cs",
+              "RelativeDocumentMoniker": "CP4\\CountryServices\\CountryService.cs",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\CountryServices\\CountryService.cs",
+              "RelativeToolTip": "CP4\\CountryServices\\CountryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:17:34.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "CP4\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "CP4\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:13:13.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "CP4\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\WeatherForecast.cs",
+              "RelativeToolTip": "CP4\\WeatherForecast.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:12:49.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CountriesResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\CountryServices\\Responses\\CountriesResponse.cs",
+              "RelativeDocumentMoniker": "CP4\\CountryServices\\Responses\\CountriesResponse.cs",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\CountryServices\\Responses\\CountriesResponse.cs",
+              "RelativeToolTip": "CP4\\CountryServices\\Responses\\CountriesResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:11:16.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NameResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\CountryServices\\Responses\\NameResponse.cs",
+              "RelativeDocumentMoniker": "CP4\\CountryServices\\Responses\\NameResponse.cs",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\CountryServices\\Responses\\NameResponse.cs",
+              "RelativeToolTip": "CP4\\CountryServices\\Responses\\NameResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:10:57.552Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FlagsResponse.cs",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\CountryServices\\Responses\\FlagsResponse.cs",
+              "RelativeDocumentMoniker": "CP4\\CountryServices\\Responses\\FlagsResponse.cs",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\CountryServices\\Responses\\FlagsResponse.cs",
+              "RelativeToolTip": "CP4\\CountryServices\\Responses\\FlagsResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-13T14:09:53.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CP4.API",
+              "DocumentMoniker": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\CP4.API.csproj",
+              "RelativeDocumentMoniker": "CP4\\CP4.API.csproj",
+              "ToolTip": "C:\\Users\\Breno\\gitClones\\FIAP\\2ANO\\.NET\\2-semestre\\CP4\\CP4\\CP4\\CP4.API.csproj",
+              "RelativeToolTip": "CP4\\CP4.API.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-13T14:00:50.887Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

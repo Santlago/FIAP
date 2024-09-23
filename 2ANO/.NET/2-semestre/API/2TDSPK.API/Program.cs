@@ -1,5 +1,8 @@
 
 using _2TDSPK.Database;
+using _2TDSPK.Database.Models;
+using _2TDSPK.Repository;
+using _2TDSPK.Repository.Interface;
 using _2TDSPK.Services.CEP;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -45,6 +48,7 @@ namespace _2TDSPK.API
                     }
                 });
 
+
                 //Codigo para mudar a documentação do Swagger
                 swagger.SwaggerDoc("v1", new OpenApiInfo
                 {
@@ -64,6 +68,7 @@ namespace _2TDSPK.API
             });
 
             builder.Services.AddScoped<ICEPService, CEPService>();  
+            builder.Services.AddScoped<IRepository<User>, Repository<User>>();
 
             var app = builder.Build();
 

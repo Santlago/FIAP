@@ -11,8 +11,4 @@
     <ProjectReference Include="..\2TDSPK.Database\2TDSPK.Database.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Interface\" />
-  </ItemGroup>
-
 </Project>
